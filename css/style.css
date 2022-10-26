@@ -5,15 +5,81 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    line-height: 1.5!important;
+    line-height: 1.5 !important;
 }
 
+/* ------cargando-------- */
 
+.contenedor-cargando {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 101;
+    background-color: #e7e9eb;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path 1s;
+
+}
+
+.contenedor-cargando-efecto {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 1s;
+}
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+}
+
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: var(--color-primario);
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+    0% {
+        top: 8px;
+        height: 64px;
+    }
+
+    50%,
+    100% {
+        top: 24px;
+        height: 32px;
+    }
+}
+
+/* 
+-----------generales---------- */
 :root {
-    --color-primario: #2196f3;
-    --color-secundario: #c21a30;
-    --color-titulo:rgb(26, 26, 26);
-    --fuente-secundaria:'Oswald', sans-serif;
+    --color-primario: #ee0e0e;
+    --color-secundario: #fd7b7b;
+    --color-titulo: rgb(26, 26, 26);
+    --fuente-secundaria: 'Oswald', sans-serif;
 }
 
 h3 {
@@ -23,14 +89,15 @@ h3 {
     margin-bottom: 0;
 }
 
-.color-primario{
-    color:var(--color-primario);
-}
-.color-oscuro{
-    color:var(--color-titulo);
+.color-primario {
+    color: var(--color-primario);
 }
 
-#membrete{
+.color-oscuro {
+    color: var(--color-titulo);
+}
+
+#membrete {
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
     padding: 2px 10px;
@@ -46,22 +113,27 @@ h2 {
     margin: 0;
     padding-bottom: 10px;
 }
-.instagram{
-background-color: #ff419d;
-color: #f8f9fa;
+
+.instagram {
+    background-color: #ff419d;
+    color: #f8f9fa;
 }
-.facebook{
-background-color: #4664a5;
-color: #f8f9fa;
+
+.facebook {
+    background-color: #4664a5;
+    color: #f8f9fa;
 }
-.twitter{
-background-color: #1c96e9;
-color: #f8f9fa;
+
+.twitter {
+    background-color: #1c96e9;
+    color: #f8f9fa;
 }
-.textos{
+
+.textos {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
+
 .sub-raya::before {
     content: '';
     position: absolute;
@@ -79,7 +151,7 @@ color: #f8f9fa;
 
 marquee {
     background-color: var(--color-primario);
-    color:#f8f9fa ;
+    color: #f8f9fa;
     font-size: 14px;
 }
 
@@ -88,7 +160,8 @@ nav {
     transition: position 2s;
     position: relative;
 }
-.menu-fijo{
+
+.menu-fijo {
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -125,11 +198,13 @@ nav {
     z-index: 100;
     padding: 0;
 }
-.lista-redes li{
+
+.lista-redes li {
     list-style: none;
 
 }
-.lista-redes li a{
+
+.lista-redes li a {
     text-decoration: none;
     position: relative;
     left: 0;
@@ -137,11 +212,13 @@ nav {
     display: flex;
     align-items: center;
 }
-.lista-redes li a:hover{
+
+.lista-redes li a:hover {
     color: white;
 }
-.lista-redes li:hover a{
-  
+
+.lista-redes li:hover a {
+
     left: -80px;
     transition: left 1s, border-radius 1s;
     border-radius: 4px;
@@ -160,18 +237,19 @@ nav {
 } */
 
 /* carrouser */
-.carrusel-foto img{
+.carrusel-foto img {
     height: 450px;
     object-fit: cover;
 }
-.carousel-indicators [data-bs-target]{
+
+.carousel-indicators [data-bs-target] {
     background-color: #ffffff;
     border-radius: 50%;
     height: 14px;
     width: 14px;
 }
 
-.carrusel-foto .carousel-caption{
+.carrusel-foto .carousel-caption {
     bottom: 35%;
     backdrop-filter: grayscale(6);
     width: 100%;
@@ -232,8 +310,8 @@ nav {
 
 #al-figura-1 {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    background: rgb(121,9,9);
-background: linear-gradient(97deg, rgba(121,9,9,0.8125) 43%, rgba(223,19,19,1) 69%);
+    background: rgb(121, 9, 9);
+    background: linear-gradient(97deg, rgba(121, 9, 9, 0.8125) 43%, rgba(223, 19, 19, 1) 69%);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -249,7 +327,8 @@ background: linear-gradient(97deg, rgba(121,9,9,0.8125) 43%, rgba(223,19,19,1) 6
     height: 420px;
     z-index: 2;
 }
-.al-figura-2::before{
+
+.al-figura-2::before {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     content: '';
     height: 94%;
@@ -268,69 +347,79 @@ background: linear-gradient(97deg, rgba(121,9,9,0.8125) 43%, rgba(223,19,19,1) 6
 
 /* Seccon servicios */
 
-.servicios{
+.servicios {
     width: 100%;
-    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../img/Capacho\ Nuevo_0.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/Capacho\ Nuevo_0.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     position: relative;
-    
+
 }
-.servicios .container .row col{
+
+.servicios .container .row col {
     padding: 2px 4px;
 }
 
-.carta{
+.carta {
     border: 1px solid rgba(147, 142, 142, 0.2);
     border-radius: 2px;
     backdrop-filter: blur(5px);
 }
-.carta:hover{
+
+.carta:hover {
     cursor: pointer;
     border: 1px solid var(--color-primario);
 }
-.servicios-figura{
+
+.servicios-figura {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
-    background-color: aliceblue;clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    
+    background-color: aliceblue;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
 }
-.servicios-figura i{
+
+.servicios-figura i {
     font-size: 39px;
 }
-.saber-mas{
+
+.saber-mas {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-decoration: none;
 }
-.saber-mas::before{
+
+.saber-mas::before {
     content: '';
     clip-path: polygon(50% 100%, 0 0, 100% 0);
     padding-top: 5px;
     width: 25px;
     height: 25px;
     bottom: 0;
-   
+
     position: absolute;
     background-color: var(--color-secundario);
 }
+
 /* 
 entes */
 
-.entes img{
+.entes img {
     object-fit: cover;
     clip-path: polygon(0% 0%, 60% 0, 100% 50%, 60% 100%, 0% 100%);
 }
-.entes .servicios-entes-figura{
+
+.entes .servicios-entes-figura {
     position: relative;
-   
+
 }
-.entes .servicios-entes-figura::before{
+
+.entes .servicios-entes-figura::before {
     content: '';
     width: 15%;
     height: 29%;
@@ -342,10 +431,11 @@ entes */
 }
 
 /* datos */
-.datos{
+.datos {
     background-color: var(--color-primario);
 }
-.datos hr{
+
+.datos hr {
     height: 3px;
     background-color: #f8f9fa;
     opacity: 1;
@@ -353,108 +443,139 @@ entes */
 
 /* Seccion Noticias */
 
-.carta-noticia{
-position: relative;
-}
-.carta-noticia span:first-child{ 
-position: absolute;
-font-family: var(--fuente-secundaria);
-font-size: 20px;
-left: 0;
-top: 80px;
-width: 0px;
-height: 34px;
-color: var(--color-secundario);
-background-color: var(--color-secundario);
-overflow: hidden;
-transition: width 1s;
-}
-.carta-noticia span:last-child{ 
-position: absolute;
-right: 0;
-top: 115px;
-width: 0;
-height: 34px;
-color: var(--color-primario);
-background-color: var(--color-primario);
-overflow: hidden;
+.carta-noticia {
+    position: relative;
 }
 
-.carta-noticia:hover span:first-child{
+.carta-noticia span:first-child {
+    position: absolute;
+    font-family: var(--fuente-secundaria);
+    font-size: 20px;
+    left: 0;
+    top: 80px;
+    width: 0px;
+    height: 34px;
+    color: var(--color-secundario);
+    background-color: var(--color-secundario);
+    overflow: hidden;
+    transition: width 1s;
+}
+
+.carta-noticia span:last-child {
+    position: absolute;
+    right: 0;
+    top: 115px;
+    width: 0;
+    height: 34px;
+    color: var(--color-primario);
+    background-color: var(--color-primario);
+    overflow: hidden;
+}
+
+.carta-noticia:hover span:first-child {
     width: 250px;
     color: white;
     transition: width 1s, color 2s;
-    }
-.carta-noticia:hover span:last-child{
+}
+
+.carta-noticia:hover span:last-child {
     width: 250px;
     color: white;
-    transition: width 1s,  color 2s;
-    }
+    transition: width 1s, color 2s;
+}
 
 /* Mapa */
 
-.mapa iframe{
+.mapa iframe {
     padding: 0;
     line-height: 0;
 }
-.mapa .row .col-12{
+
+.mapa .row .col-12 {
     line-height: 0;
 }
 
 /* Pie de pagina */
-footer{
+footer {
     background-color: var(--color-primario);
-    
+
 }
-footer h5{
+
+footer h5 {
     font-family: var(--fuente-secundaria);
-    
+
 }
 
 /* ----Pagina de Noticias-------- */
 
-.pagina-noticias aside{
-    
+.pagina-noticias aside {
+
     border-top: 5px solid var(--color-primario);
-    border-left: 2px solid rgba(0,0,0,.125);
+    border-left: 2px solid rgba(0, 0, 0, .125);
     padding: 10px 10px;
 
 }
-.card-title{
+
+.card-title {
     font-family: var(--fuente-secundaria);
     color: var(--color-titulo);
 }
-.ventana-twitter div{
+
+.ventana-twitter div {
     height: 300px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.card:hover img{
+
+.card:hover img {
     filter: blur(1px);
 }
-.card:hover .card-title{
-     color: var(--color-secundario);
+
+.card:hover .card-title {
+    color: var(--color-secundario);
 }
 
 /* -------vista noticias------- */
 
-.vista-titulo-noticia span:first-child{
+.vista-titulo-noticia span:first-child {
     width: 10%;
     height: 78px;
     background-color: var(--color-primario);
-} 
-
-/* ------comentarios------- */
-.comentarios{
-    border-top: 1px solid rgba(0,0,0,.125);
+}
+.noticias-enlaces .whatsapp{
+background-color: #25D366;
+color: white;
+}
+.noticias-enlaces .whatsapp:hover{
+background-color: #128c7e;
+color: white;
+}
+.noticias-enlaces .facebook{
+background-color: #4664a5;
+color: white;
+}
+.noticias-enlaces .facebook:hover{
+background-color: #3b5388;
+}
+.noticias-enlaces .twitter{
+background-color: #1c96e9;
+color: white;
+}
+.noticias-enlaces .twitter:hover{
+background-color: #1780c5;
 }
 
-.contenedor-ancho{
+/* ------comentarios------- */
+.comentarios {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.contenedor-ancho {
     max-width: 702px;
 }
 
 /* ------Pagina servicio--------- */
-.servicios-carta-cuerpo{
+.servicios-carta-cuerpo {
     bottom: 0;
     left: 0;
     width: 100%;
@@ -465,19 +586,23 @@ footer h5{
     transition: height 1s;
     background-color: var(--color-primario);
 }
-.carta-servicios:hover .servicios-carta-cuerpo{
-height: 100%; 
-transition: height 1s,display 2s;
+
+.carta-servicios:hover .servicios-carta-cuerpo {
+    height: 100%;
+    transition: height 1s, display 2s;
 }
-.carta-servicios h3{
+
+.carta-servicios h3 {
     display: none;
     transition: display 1s;
 }
-.carta-servicios :hover h3{
+
+.carta-servicios :hover h3 {
     display: block;
     transition: display 1s;
 }
-.servicios-carta-cuerpo .col-3{
+
+.servicios-carta-cuerpo .col-3 {
     background-color: var(--color-secundario);
 }
 
@@ -485,69 +610,80 @@ transition: height 1s,display 2s;
 .accordion-button:not(.collapsed) {
     color: #b70a0a;
     background-color: #ff314b40;
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
-  }
-  .accordion-body p{
-      color: black;
-      line-height: 25px;
-      font-size: 14px;
-  }
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+
+.accordion-body p {
+    color: black;
+    line-height: 25px;
+    font-size: 14px;
+}
 
 
 /*   --------Municipio Pagina--------- */
 .municipio-limites {
     background-color: var(--color-primario);
-    
+
 }
 
-.municipio-limites img{
+.municipio-limites img {
 
     box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.85) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.18) 25px 25px;
 }
 
-.municipio-himno p{
+.municipio-himno p {
     font-size: 16px;
     padding: 0 15px;
-    border-left:3px solid rgba(0,0,0,.125) ;
+    border-left: 3px solid rgba(0, 0, 0, .125);
 }
+
 /* 
 ------Pagina alcaldia----------
  */
 
- .contenedor-organigrama {
-   position: relative;
-   overflow: hidden;
-   cursor: pointer;
- }
+.contenedor-organigrama {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
 
 
- .contenedor-organigrama img{
+.contenedor-organigrama img {
     width: 100%;
     height: 100%;
- }
- .mv-cuerpo{
-     position: relative;
- }
- .mv-cuerpo p{
-     background-color: var(--color-primario);
+}
+
+.mv-cuerpo {
+    position: relative;
+}
+
+.mv-cuerpo p {
+    background-color: var(--color-primario);
     color: #ffffff;
- }
- .mv-cuerpo h2{
-     font-size: 50px;
-     -webkit-text-stroke: 1px var(--color-primario);
-     color: white;
- }
- .mv-cuerpo .figura{
-     position: absolute;
-     left: 0;
+}
+
+.mv-cuerpo h2 {
+    font-size: 50px;
+    -webkit-text-stroke: 1px var(--color-primario);
+    color: white;
+}
+
+.mv-cuerpo .figura {
+    position: absolute;
+    left: 0;
     background-color: var(--color-primario);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     height: 100%;
     width: 100%;
     z-index: -1;
- }
-@media(max-width:400px){
-    .entes .servicios-entes-figura::before{
+}
+
+@media(max-width:400px) {
+    .entes .servicios-entes-figura::before {
         display: none;
+    }
+    #membrete {
+        font-size: 24px;
+        padding: 2px 2px;
     }
 }

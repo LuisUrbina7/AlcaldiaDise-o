@@ -22,6 +22,16 @@
                             Iure animi debitis eos ipsam eum vel ullam ipsum. Corporis a iste delectus molestias unde dolorem quaerat fugiat iure enim ab explicabo temporibus amet, tempore odio perspiciatis, dolores magnam provident.
                             Hic iste autem reprehenderit placeat quae adipisci vero laborum, quis ipsum voluptate, vel et qui dolores repellendus explicabo accusamus veritatis eos at fugit nostrum in libero soluta deserunt. Quam, ducimus.
                             Similique inventore adipisci enim ex aliquid maiores, repellendus quisquam culpa, velit eos minus in vitae quam dolore error, eaque dignissimos? Molestias doloremque facilis voluptatem dolorem adipisci ipsum deleniti? Eum, suscipit?</p>
+                            <div class="noticias-enlaces text-center">
+                                <a href="" class="btn rounded-circle whatsapp shadow"><span class="fs-3 "><i class="lab la-whatsapp "></i></span></a>
+                                <a href="" class="btn rounded-circle mx-3 facebook shadow"><span class="fs-3 ">
+                                <i class="lab la-facebook-f "></i>
+                                </span></a>
+                                <a href="" class="btn rounded-circle twitter shadow"><span class="fs-3 ">
+                                <i class="lab la-twitter"></i>
+                                </span></a>
+                            </div>
+
                         </div>
                     </div>
                     <aside class="col-md-3 d-none d-md-block">

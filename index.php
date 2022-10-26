@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <?php include('cargador/cargando.php') ?>
     <header>
         <div class="d-flex">
             <span id="cuadro-1"></span>
@@ -152,7 +153,7 @@
                         <div class="al-figura-2 d-flex justify-content-center align-items-center">
                             <div class="px-md-5">
                                 <h3 class="h4">Lus Mendozqa</h3>
-                                <p class="textos text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                <p class="textos ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
                                     dolorum, nemo saepe id
                                     ut asperiores. </p>
                                 <a href="btn" class="btn btn-danger">Leer mas</a>
@@ -360,11 +361,11 @@
                     </div>
                 </div>
         </section>
-        <section class="mapa">
+       <!--  <section class="mapa">
             <div class="lh-1">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63242.64468534074!2d-72.37228766875002!3d7.825205700000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666a3d6ebccb91%3A0x6ffe72e7abf9b009!2sAlcald%C3%ADa%20Municipio%20Independencia!5e0!3m2!1ses-419!2sve!4v1666016303907!5m2!1ses-419!2sve" width="100%" height="254px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer class="py-2">
         <div class="container ">
@@ -389,7 +390,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="js/cargando.js" ></script>
     <script>
         $(document).ready(function() {
             var menu = $('.menu-pegajoso-inicio').offset().top;
@@ -402,6 +403,7 @@
             })
         });
     </script>
+   
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

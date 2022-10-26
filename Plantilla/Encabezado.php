@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<?php include('../cargador/cargando.php') ?>
 <header>
     <div class="d-flex">
         <span id="cuadro-1"></span>
