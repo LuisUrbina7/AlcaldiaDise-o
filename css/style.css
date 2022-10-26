@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;500&family=Oswald:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.5!important;
+}
+
+
+:root {
+    --color-primario: #2196f3;
+    --color-secundario: #c21a30;
+    --color-titulo:rgb(26, 26, 26);
+    --fuente-secundaria:'Oswald', sans-serif;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: var(--color-secundario);
+    margin-bottom: 0;
+}
+
+.color-primario{
+    color:var(--color-primario);
+}
+.color-oscuro{
+    color:var(--color-titulo);
+}
+
+#membrete{
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    padding: 2px 10px;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    position: relative;
+    display: flex;
+    color: var(--color-titulo);
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.instagram{
+background-color: #ff419d;
+color: #f8f9fa;
+}
+.facebook{
+background-color: #4664a5;
+color: #f8f9fa;
+}
+.twitter{
+background-color: #1c96e9;
+color: #f8f9fa;
+}
+.textos{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.sub-raya::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: var(--color-secundario);
+    width: 50px;
+}
+
+#cuadro-1 {
+    border: 2px solid var(--color-primario);
+    height: 30px;
+    width: 40%;
+}
+
+marquee {
+    background-color: var(--color-primario);
+    color:#f8f9fa ;
+    font-size: 14px;
+}
+
+nav {
+    background-color: var(--color-primario);
+    transition: position 2s;
+    position: relative;
+}
+.menu-fijo{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    transition: position 2s;
+}
+
+.nav-item {
+    position: relative;
+    padding: 2px 0;
+}
+
+.nav-item::before {
+    content: '';
+    bottom: 10px;
+    left: 0;
+    background-color: white;
+    position: absolute;
+    height: 4px;
+    width: 0;
+    transition: width 1s;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+    transition: width 1s;
+}
+
+.lista-redes {
+    background-color: yellow;
+    position: fixed;
+    right: -77px;
+    bottom: 40%;
+    z-index: 100;
+    padding: 0;
+}
+.lista-redes li{
+    list-style: none;
+
+}
+.lista-redes li a{
+    text-decoration: none;
+    position: relative;
+    left: 0;
+    transition: left 1s;
+    display: flex;
+    align-items: center;
+}
+.lista-redes li a:hover{
+    color: white;
+}
+.lista-redes li:hover a{
+  
+    left: -80px;
+    transition: left 1s, border-radius 1s;
+    border-radius: 4px;
+}
+
+/* .lista-redes li a::after {
+    width: 30px;
+    position: absolute;
+    transition: width 1s;
+}
+
+.lista-redes li:hover a::after {
+    background-color: red;
+    width: 100px;
+    transition: width 1s;
+} */
+
+/* carrouser */
+.carrusel-foto img{
+    height: 450px;
+    object-fit: cover;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+}
+
+.carrusel-foto .carousel-caption{
+    bottom: 35%;
+    backdrop-filter: grayscale(6);
+    width: 100%;
+    left: 0px;
+    right: 0;
+}
+
+/* Figuras de seccion alcade */
+.alcalde {
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.alcalde span:first-child {
+    width: 140px;
+    height: 50px;
+    top: 140px;
+    left: 0;
+    z-index: 3;
+    position: absolute;
+    background-color: #ffd943;
+    transition: width 1s;
+}
+
+.alcalde:hover span:first-child {
+    transition: width 1s;
+    width: 300px;
+}
+
+.alcalde span:last-child {
+    width: 100px;
+    height: 50px;
+    bottom: 60px;
+    right: 0;
+    z-index: 3;
+    position: absolute;
+    transition: width 1s;
+    background-color: var(--color-secundario)
+}
+
+.alcalde:hover span:last-child {
+    transition: width 1s;
+    width: 300px;
+}
+
+.al-contenedor {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*  background-color: rgba(0, 255, 255, 0.226); */
+    z-index: 5;
+
+}
+
+#al-figura-1 {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background: rgb(121,9,9);
+background: linear-gradient(97deg, rgba(121,9,9,0.8125) 43%, rgba(223,19,19,1) 69%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+}
+
+.al-figura-2 {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: #ffffff;
+    position: relative;
+    width: 456px;
+    height: 420px;
+    z-index: 2;
+}
+.al-figura-2::before{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    content: '';
+    height: 94%;
+    width: 90%;
+    position: absolute;
+    top: 8px;
+    background-color: #eeeeeebd;
+    z-index: -1;
+}
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Seccon servicios */
+
+.servicios{
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../img/Capacho\ Nuevo_0.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+    
+}
+.servicios .container .row col{
+    padding: 2px 4px;
+}
+
+.carta{
+    border: 1px solid rgba(147, 142, 142, 0.2);
+    border-radius: 2px;
+    backdrop-filter: blur(5px);
+}
+.carta:hover{
+    cursor: pointer;
+    border: 1px solid var(--color-primario);
+}
+.servicios-figura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    
+}
+.servicios-figura i{
+    font-size: 39px;
+}
+.saber-mas{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+.saber-mas::before{
+    content: '';
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    bottom: 0;
+   
+    position: absolute;
+    background-color: var(--color-secundario);
+}
+/* 
+entes */
+
+.entes img{
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 60% 0, 100% 50%, 60% 100%, 0% 100%);
+}
+.entes .servicios-entes-figura{
+    position: relative;
+   
+}
+.entes .servicios-entes-figura::before{
+    content: '';
+    width: 15%;
+    height: 29%;
+    top: 0;
+    right: 0;
+    background-color: var(--color-secundario);
+    position: absolute;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+/* datos */
+.datos{
+    background-color: var(--color-primario);
+}
+.datos hr{
+    height: 3px;
+    background-color: #f8f9fa;
+    opacity: 1;
+}
+
+/* Seccion Noticias */
+
+.carta-noticia{
+position: relative;
+}
+.carta-noticia span:first-child{ 
+position: absolute;
+font-family: var(--fuente-secundaria);
+font-size: 20px;
+left: 0;
+top: 80px;
+width: 0px;
+height: 34px;
+color: var(--color-secundario);
+background-color: var(--color-secundario);
+overflow: hidden;
+transition: width 1s;
+}
+.carta-noticia span:last-child{ 
+position: absolute;
+right: 0;
+top: 115px;
+width: 0;
+height: 34px;
+color: var(--color-primario);
+background-color: var(--color-primario);
+overflow: hidden;
+}
+
+.carta-noticia:hover span:first-child{
+    width: 250px;
+    color: white;
+    transition: width 1s, color 2s;
+    }
+.carta-noticia:hover span:last-child{
+    width: 250px;
+    color: white;
+    transition: width 1s,  color 2s;
+    }
+
+/* Mapa */
+
+.mapa iframe{
+    padding: 0;
+    line-height: 0;
+}
+.mapa .row .col-12{
+    line-height: 0;
+}
+
+/* Pie de pagina */
+footer{
+    background-color: var(--color-primario);
+    
+}
+footer h5{
+    font-family: var(--fuente-secundaria);
+    
+}
+
+/* ----Pagina de Noticias-------- */
+
+.pagina-noticias aside{
+    
+    border-top: 5px solid var(--color-primario);
+    border-left: 2px solid rgba(0,0,0,.125);
+    padding: 10px 10px;
+
+}
+.card-title{
+    font-family: var(--fuente-secundaria);
+    color: var(--color-titulo);
+}
+.ventana-twitter div{
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.card:hover img{
+    filter: blur(1px);
+}
+.card:hover .card-title{
+     color: var(--color-secundario);
+}
+
+/* -------vista noticias------- */
+
+.vista-titulo-noticia span:first-child{
+    width: 10%;
+    height: 78px;
+    background-color: var(--color-primario);
+} 
+
+/* ------comentarios------- */
+.comentarios{
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.contenedor-ancho{
+    max-width: 702px;
+}
+
+/* ------Pagina servicio--------- */
+.servicios-carta-cuerpo{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 1s;
+    background-color: var(--color-primario);
+}
+.carta-servicios:hover .servicios-carta-cuerpo{
+height: 100%; 
+transition: height 1s,display 2s;
+}
+.carta-servicios h3{
+    display: none;
+    transition: display 1s;
+}
+.carta-servicios :hover h3{
+    display: block;
+    transition: display 1s;
+}
+.servicios-carta-cuerpo .col-3{
+    background-color: var(--color-secundario);
+}
+
+/* -------pagina servicios vista------------- */
+.accordion-button:not(.collapsed) {
+    color: #b70a0a;
+    background-color: #ff314b40;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+  }
+  .accordion-body p{
+      color: black;
+      line-height: 25px;
+      font-size: 14px;
+  }
+
+
+/*   --------Municipio Pagina--------- */
+.municipio-limites {
+    background-color: var(--color-primario);
+    
+}
+
+.municipio-limites img{
+
+    box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.85) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.18) 25px 25px;
+}
+
+.municipio-himno p{
+    font-size: 16px;
+    padding: 0 15px;
+    border-left:3px solid rgba(0,0,0,.125) ;
+}
+/* 
+------Pagina alcaldia----------
+ */
+
+ .contenedor-organigrama {
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+ }
+
+
+ .contenedor-organigrama img{
+    width: 100%;
+    height: 100%;
+ }
+ .mv-cuerpo{
+     position: relative;
+ }
+ .mv-cuerpo p{
+     background-color: var(--color-primario);
+    color: #ffffff;
+ }
+ .mv-cuerpo h2{
+     font-size: 50px;
+     -webkit-text-stroke: 1px var(--color-primario);
+     color: white;
+ }
+ .mv-cuerpo .figura{
+     position: absolute;
+     left: 0;
+    background-color: var(--color-primario);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+ }
+@media(max-width:400px){
+    .entes .servicios-entes-figura::before{
+        display: none;
+    }
+}
