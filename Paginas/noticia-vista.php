@@ -2,7 +2,7 @@
     <main>
         <section class="pagina-noticias">
             <div class="container">
-                <div class="row  p-md-5">
+                <div class="row  p-md-4">
                     <div class="col-md-9">
                         <div class="d-flex vista-titulo-noticia px-4 align-items-center">
                             <span class=" rounded "></span>

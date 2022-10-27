@@ -12,8 +12,15 @@
                     <img src="../img/magen.png" alt="">
                 </div>
             </div>
-            <div class="row text-center px-md-5">
-                <h3 class="mb-3">Organigrama Institucional.</h3>
+        </div>
+    </section>
+    <section id="espacio-alcaldia">
+
+    </section>
+    <section class="organigrama">
+        <div class="container">
+            <div class="row text-center py-5 px-md-5">
+                <h2 class="mb-3">Organigrama Institucional.</h2>
                 <div class="col-12 h-100">
                     <a data-bs-toggle="modal" data-bs-target="#modalOrganigrama">
                         <div class="contenedor-organigrama h-50 border rounded">

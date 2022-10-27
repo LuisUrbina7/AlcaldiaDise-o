@@ -2,7 +2,7 @@
     <main>
             <section>
                 <div class="container">
-                    <div class="row p-5">
+                    <div class="row py-5 px-md-5">
                         <div class="col-md-9">
                             <div class="d-flex vista-titulo-noticia px-4 align-items-center">
                                 <span class=" rounded bg-warning"></span>
@@ -11,7 +11,7 @@
                                     <p> <small class="text-muted "> Todos los procesos relacionados al servicios..</small> </p>
                                 </div>
                             </div>
-                            <div class="px-5">
+                            <div class="px-md-5">
 
                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                     <div class="accordion-item">

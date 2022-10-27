@@ -15,16 +15,16 @@
 <body>
     <?php include('cargador/cargando.php') ?>
     <header>
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 191.25, 0, 1)" offset="0%"></stop><stop stop-color="rgba(255, 193, 7, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,42L288,70L576,56L864,98L1152,84L1440,56L1728,56L2016,98L2304,28L2592,112L2880,56L3168,14L3456,126L3744,98L4032,98L4320,0L4608,0L4896,98L5184,84L5472,70L5760,42L6048,84L6336,112L6624,42L6912,56L6912,140L6624,140L6336,140L6048,140L5760,140L5472,140L5184,140L4896,140L4608,140L4320,140L4032,140L3744,140L3456,140L3168,140L2880,140L2592,140L2304,140L2016,140L1728,140L1440,140L1152,140L864,140L576,140L288,140L0,140Z"></path></svg>
         <div class="d-flex">
-            <span id="cuadro-1"></span>
-            <marquee behavior="" direction="letf">Carrera 06 frente a la Plaza Bolivar de Independecia, Edif. sede Alcaldia, Municipio Capacho Nuevo, Estado Táchira</marquee>
+            <marquee behavior="" direction="letf" class="py-1">Carrera 06 frente a la Plaza Bolivar de Independecia, Edif. sede Alcaldia, Municipio Capacho Nuevo, Estado Táchira</marquee>
         </div>
         <div class="container py-2 d-flex align-items-center">
+        
             <img src="img/escudo.png" alt="Escudo" width="100px" height="100px">
             <div class="titulo-encabezado lh-1 mx-md-4 d-flex w-100">
                 <img src="img/Barras.png" alt="Titulo">
                 <h1 id="membrete"> ALCALDIA BOLIVARIANA DEL MUNICIPIO <br> <small class="h3 d-none d-md-block">CAPACHO NUEVO DEL ESTADO TACHIRA</small> </h1>
-
             </div>
         </div>
         <nav class="menu-pegajoso-inicio">
@@ -48,13 +48,14 @@
             </div>
         </nav>
         <ul class="lista-redes d-none d-md-block">
-            <li><a class="instagram" href=""><i class="lab la-instagram fs-2 text-light p-2"></i> Instagram</a></li>
+            <li><a class="instagram" href="https://www.instagram.com/alcaldia_capachonuevo/"><i class="lab la-instagram fs-2 text-light p-2"></i> Instagram</a></li>
             <li> <a class="facebook" href=""><i class="lab la-facebook-f fs-2 text-light p-2"></i> Facebook</a></li>
             <li><a class="twitter" href=""><i class="lab la-twitter fs-2 text-light p-2"></i> twitter</a> </li>
         </ul>
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 191.25, 0, 1)" offset="0%"></stop><stop stop-color="rgba(255, 193, 7, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,42L288,70L576,56L864,98L1152,84L1440,56L1728,56L2016,98L2304,28L2592,112L2880,56L3168,14L3456,126L3744,98L4032,98L4320,0L4608,0L4896,98L5184,84L5472,70L5760,42L6048,84L6336,112L6624,42L6912,56L6912,140L6624,140L6336,140L6048,140L5760,140L5472,140L5184,140L4896,140L4608,140L4320,140L4032,140L3744,140L3456,140L3168,140L2880,140L2592,140L2304,140L2016,140L1728,140L1440,140L1152,140L864,140L576,140L288,140L0,140Z"></path></svg>
     </header>
     <main>
-        -----obras publicas, proteccion civil, desarrollo social, Novedades, cultura y turismo, Deporte y recreación,servicios generales----
+       <!--  -----obras publicas, proteccion civil, desarrollo social, Novedades, cultura y turismo, Deporte y recreación,servicios generales---- -->
         <section class="deslizador">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -152,10 +153,8 @@
                     <div class="col-12 cuadro pt-3 p-0">
                         <div class="al-figura-2 d-flex justify-content-center align-items-center">
                             <div class="px-md-5">
-                                <h3 class="h4">Lus Mendozqa</h3>
-                                <p class="textos ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                                    dolorum, nemo saepe id
-                                    ut asperiores. </p>
+                                <h3 class="h4">Lus Mendoza</h3>
+                                <p class="textos ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorum, nemo saepe id ut asperiores. </p>
                                 <a href="btn" class="btn btn-danger">Leer mas</a>
                             </div>
                         </div>
@@ -216,12 +215,14 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active ">
                                 <div class="carta-carrusel d-flex justify-content-center mb-3">
-                                    <div class="row w-75 border rounded p-md-3 mb-dm-3 shadow servicios-entes-figura">
+                                    <div class="row w-75  p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
                                         <div class="col-md-6 text-end">
-                                            <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
+                                            <img src="img/fijas/Logo-planificacion-publica-600x286.jpg" alt="" width="100%">
                                         </div>
+                                        
                                         <div class="col-md-6 d-flex align-items-center">
                                             <div class="">
+                                                
                                                 <h4>Fundaindependencia</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis deserunt culpa quod at
                                                     perspiciatis quia sint possimus ut fugiat sequi impedit optio, reiciendis laborum
@@ -233,7 +234,7 @@
                             </div>
                              <div class="carousel-item">
                             <div class="carta-carrusel d-flex justify-content-center  mb-3">
-                                    <div class="row w-75 border rounded p-md-3 mb-dm-3 shadow servicios-entes-figura">
+                                    <div class="row w-75 p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
                                         <div class="col-md-6 text-end">
                                             <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
                                         </div>
@@ -250,7 +251,7 @@
                             </div> 
                            <div class="carousel-item">
                             <div class="carta-carrusel d-flex justify-content-center  mb-3">
-                                    <div class="row w-75 border rounded p-md-3 mb-dm-3 shadow servicios-entes-figura">
+                                    <div class="row w-75 p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
                                         <div class="col-md-6 text-end">
                                             <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
                                         </div>
@@ -267,10 +268,10 @@
                             </div> 
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-entes" data-bs-slide="prev">
-                        <i class="las la-angle-double-left fs-2"></i>
+                        <i class="las la-angle-double-left fs-1 color-oscuro"></i>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carousel-entes" data-bs-slide="next">
-                        <i class="las la-angle-double-right fs-2"></i>
+                        <i class="las la-angle-double-right fs-1 color-oscuro"></i>
                         </button>
                     </div>
 
@@ -299,7 +300,7 @@
                     <div class="col-md-3 px-5 mb-2">
                         <h3 class="h1 text-light ">5</h3>
                         <hr>
-                        <h3 class="text-light">Hosytales</h3>
+                        <h3 class="text-light">Hospitales</h3>
                     </div>
                     <div class="col-md-3 px-5 mb-2">
                         <h3 class="h1 text-light ">3</h3>
@@ -309,7 +310,7 @@
                     <div class="col-md-3 px-5 mb-2">
                         <h3 class="h1 text-light ">2</h3>
                         <hr>
-                        <h3 class="text-light">glesas</h3>
+                        <h3 class="text-light">Iglesas</h3>
                     </div>
                 </div>
             </div>
@@ -361,11 +362,11 @@
                     </div>
                 </div>
         </section>
-       <!--  <section class="mapa">
+        <section class="mapa">
             <div class="lh-1">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63242.64468534074!2d-72.37228766875002!3d7.825205700000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666a3d6ebccb91%3A0x6ffe72e7abf9b009!2sAlcald%C3%ADa%20Municipio%20Independencia!5e0!3m2!1ses-419!2sve!4v1666016303907!5m2!1ses-419!2sve" width="100%" height="254px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section> -->
+        </section>
     </main>
     <footer class="py-2">
         <div class="container ">

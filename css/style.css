@@ -5,7 +5,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    line-height: 1.5 !important;
+    line-height: 1.3;
+}
+:root {
+    --color-primario: #ffbf02;
+    --color-secundario: #fd7b7b;
+    --color-titulo: rgb(26, 26, 26);
+    --fuente-secundaria: 'Oswald', sans-serif;
 }
 
 /* ------cargando-------- */
@@ -18,7 +24,7 @@
     align-items: center;
     position: fixed;
     z-index: 101;
-    background-color: #e7e9eb;
+    background-color: #ffffff;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     transition: clip-path 1s;
@@ -39,24 +45,24 @@
 .lds-facebook div {
     display: inline-block;
     position: absolute;
-    left: 8px;
-    width: 16px;
+    left: 0;
+    width: 10px;
     background: var(--color-primario);
     animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 
 .lds-facebook div:nth-child(1) {
-    left: 8px;
+    left: -16px;
     animation-delay: -0.24s;
 }
 
 .lds-facebook div:nth-child(2) {
-    left: 32px;
+    left: 8px;
     animation-delay: -0.12s;
 }
 
 .lds-facebook div:nth-child(3) {
-    left: 56px;
+    left: 32px;
     animation-delay: 0;
 }
 
@@ -75,13 +81,20 @@
 
 /* 
 -----------generales---------- */
-:root {
-    --color-primario: #ee0e0e;
-    --color-secundario: #fd7b7b;
-    --color-titulo: rgb(26, 26, 26);
-    --fuente-secundaria: 'Oswald', sans-serif;
-}
 
+header{
+    position: relative;
+}
+header svg:first-child{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+header svg:last-child{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
 h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
@@ -101,6 +114,13 @@ h3 {
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
     padding: 2px 10px;
+    line-height: 0.9;
+    font-weight: 900;
+    margin: 0;
+}
+#membrete small {
+    letter-spacing: 6px;
+    margin: 0;
 }
 
 h2 {
@@ -143,11 +163,6 @@ h2 {
     width: 50px;
 }
 
-#cuadro-1 {
-    border: 2px solid var(--color-primario);
-    height: 30px;
-    width: 40%;
-}
 
 marquee {
     background-color: var(--color-primario);
@@ -159,6 +174,11 @@ nav {
     background-color: var(--color-primario);
     transition: position 2s;
     position: relative;
+    letter-spacing: 1px;
+    padding: 4px 0;
+}
+nav a{
+    font-size: 17px;
 }
 
 .menu-fijo {
@@ -166,6 +186,7 @@ nav {
     width: 100%;
     z-index: 100;
     top: 0;
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,.15)!important;
     transition: position 2s;
 }
 
@@ -176,7 +197,7 @@ nav {
 
 .nav-item::before {
     content: '';
-    bottom: 10px;
+    bottom: 4px;
     left: 0;
     background-color: white;
     position: absolute;
@@ -224,17 +245,7 @@ nav {
     border-radius: 4px;
 }
 
-/* .lista-redes li a::after {
-    width: 30px;
-    position: absolute;
-    transition: width 1s;
-}
 
-.lista-redes li:hover a::after {
-    background-color: red;
-    width: 100px;
-    transition: width 1s;
-} */
 
 /* carrouser */
 .carrusel-foto img {
@@ -274,7 +285,7 @@ nav {
     left: 0;
     z-index: 3;
     position: absolute;
-    background-color: #ffd943;
+    background-color: var(--color-secundario);
     transition: width 1s;
 }
 
@@ -677,7 +688,22 @@ background-color: #1780c5;
     width: 100%;
     z-index: -1;
 }
+#espacio-alcaldia{
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 35%)), url('../img/fijas/Capacho\ Nuevo_15a.JPG');
+}
 
+/* ----------------Pagina alcaldia--------------- */
+
+.entes-cartas ol li{
+    margin: 8px 0;
+
+}
 @media(max-width:400px) {
     .entes .servicios-entes-figura::before {
         display: none;
