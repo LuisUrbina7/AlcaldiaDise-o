@@ -8,19 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
     <title>Inicio</title>
 </head>
 
 <body>
     <?php include('cargador/cargando.php') ?>
     <header>
-    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 191.25, 0, 1)" offset="0%"></stop><stop stop-color="rgba(255, 193, 7, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,42L288,70L576,56L864,98L1152,84L1440,56L1728,56L2016,98L2304,28L2592,112L2880,56L3168,14L3456,126L3744,98L4032,98L4320,0L4608,0L4896,98L5184,84L5472,70L5760,42L6048,84L6336,112L6624,42L6912,56L6912,140L6624,140L6336,140L6048,140L5760,140L5472,140L5184,140L4896,140L4608,140L4320,140L4032,140L3744,140L3456,140L3168,140L2880,140L2592,140L2304,140L2016,140L1728,140L1440,140L1152,140L864,140L576,140L288,140L0,140Z"></path></svg>
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(220, 53, 69, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,15L480,30L960,90L1440,0L1920,75L2400,45L2880,45L3360,15L3840,15L4320,75L4800,0L5280,0L5760,45L6240,75L6720,90L7200,105L7680,135L8160,60L8640,135L9120,90L9600,120L10080,30L10560,75L11040,60L11520,120L11520,150L11040,150L10560,150L10080,150L9600,150L9120,150L8640,150L8160,150L7680,150L7200,150L6720,150L6240,150L5760,150L5280,150L4800,150L4320,150L3840,150L3360,150L2880,150L2400,150L1920,150L1440,150L960,150L480,150L0,150Z"></path>
+        </svg>
         <div class="d-flex">
             <marquee behavior="" direction="letf" class="py-1">Carrera 06 frente a la Plaza Bolivar de Independecia, Edif. sede Alcaldia, Municipio Capacho Nuevo, Estado Táchira</marquee>
         </div>
         <div class="container py-2 d-flex align-items-center">
-        
+
             <img src="img/escudo.png" alt="Escudo" width="100px" height="100px">
             <div class="titulo-encabezado lh-1 mx-md-4 d-flex w-100">
                 <img src="img/Barras.png" alt="Titulo">
@@ -52,10 +59,11 @@
             <li> <a class="facebook" href=""><i class="lab la-facebook-f fs-2 text-light p-2"></i> Facebook</a></li>
             <li><a class="twitter" href=""><i class="lab la-twitter fs-2 text-light p-2"></i> twitter</a> </li>
         </ul>
-        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 191.25, 0, 1)" offset="0%"></stop><stop stop-color="rgba(255, 193, 7, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,42L288,70L576,56L864,98L1152,84L1440,56L1728,56L2016,98L2304,28L2592,112L2880,56L3168,14L3456,126L3744,98L4032,98L4320,0L4608,0L4896,98L5184,84L5472,70L5760,42L6048,84L6336,112L6624,42L6912,56L6912,140L6624,140L6336,140L6048,140L5760,140L5472,140L5184,140L4896,140L4608,140L4320,140L4032,140L3744,140L3456,140L3168,140L2880,140L2592,140L2304,140L2016,140L1728,140L1440,140L1152,140L864,140L576,140L288,140L0,140Z"></path></svg>
+
     </header>
     <main>
-       <!--  -----obras publicas, proteccion civil, desarrollo social, Novedades, cultura y turismo, Deporte y recreación,servicios generales---- -->
+        <!--  -----obras publicas, proteccion civil, desarrollo social, Novedades, cultura y turismo, Deporte y recreación,servicios generales---- -->
+        
         <section class="deslizador">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -67,25 +75,25 @@
                     <div class="carousel-item active">
                         <img src="img/Capacho Nuevo_0.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-md-block">
-                            <h3 class="fs-1">Third slide label</h3>
-                            <p class="text-light fs-5">Some representative placeholder content for the third slide.</p>
-                            <a href="#" class="btn btn-warning"> Visualizar</a>
+                            <h3 class="fs-1">Titulo de Noticia numero 1</h3>
+                            <p class="text-light fs-5">Titulo de Noticia numero 2</p>
+                            <a href="#" > Visualizar</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/Capacho Nuevo_0.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption  d-md-block">
-                            <h3 class="fs-1">Third slide label</h3>
+                            <h3 class="fs-1">Titulo de Noticia numero 3</h3>
                             <p class="text-light fs-5">Some representative placeholder content for the third slide.</p>
-                            <a href="#" class="btn btn-warning"> Visualizar</a>
+                            <a href="#" > Visualizar</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/Capacho Nuevo_0.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-md-block">
-                            <h3 class="fs-1">Third slide label</h3>
+                            <h3 class="fs-1">Titulo de Noticia numero 1</h3>
                             <p class="text-light fs-5">Some representative placeholder content for the third slide.</p>
-                            <a href="#" class="btn btn-warning"> Visualizar</a>
+                            <a href="#" > Visualizar</a>
                         </div>
                     </div>
                 </div>
@@ -98,49 +106,13 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <!--  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators ">
-                    <button class="carrusel-botones" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner carrusel-foto">
-                    <div class="carousel-item active">
-                        <img src="img/Capacho Nuevo_0.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h3 class="fs-1">Third slide label</h3>
-                            <p class="text-light">Some representative placeholder content for the third slide.</p>
-                            <a href="#" class="btn btn-warning"> Visualizar</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Capacho Nuevo_0.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h3 class="fs-1">Third slide label</h3>
-                            <p class="text-light">Some representative placeholder content for the third slide.</p>
-                            <a href="#" class="btn btn-warning"> Visualizar</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Capacho Nuevo_0.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h3 class="fs-1">Third slide label</h3>
-                            <p class="text-light">Some representative placeholder content for the third slide.</p>
-                            <a href="#" class="btn btn-warning"> Visualizar</a>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div> -->
         </section>
-        
+        <section>
+            <div class="espacio-publicitario d-flex">
+                <img src="publicidad/gifuno.gif" alt="gid" width="50%" height="160px">
+                <img src="publicidad/gifdos.gif" alt="gid" width="50%" height="160px">
+            </div>
+        </section>
         <section class="alcalde">
             <span></span>
             <figure id="al-figura-1"></figure>
@@ -150,21 +122,24 @@
                         <h3 class="h6">ALTO MANDO</h3>
                         <h2 class="sub-raya"> Alcalde</h2>
                     </div>
-                    <div class="col-12 cuadro pt-3 p-0">
+                    <div class="col-md-7 cuadro p-0">
                         <div class="al-figura-2 d-flex justify-content-center align-items-center">
-                            <div class="px-md-5">
-                                <h3 class="h4">Lus Mendoza</h3>
+                            <div class="px-5">
+                                <h3 class="h4">Luis Mendoza</h3>
                                 <p class="textos ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorum, nemo saepe id ut asperiores. </p>
                                 <a href="btn" class="btn btn-danger">Leer mas</a>
                             </div>
                         </div>
-                        <img src="img/magen.png" alt="" class="d-none d-md-block">
+                       
+                    </div>
+                    <div class="col-md-5 cuadro  p-0 ">
+                        <img src="img/fijas/fotoprueba-removebg-preview.png" alt="foto" class="d-none d-md-block" width="450px" height="450px">
                     </div>
                 </div>
             </div>
             <span></span>
         </section>
-
+        
         <section class="servicios">
             <div class="container py-4">
                 <div class="row py-4 text-center">
@@ -174,26 +149,26 @@
                     <div class="col-md-4 px-md-4 mb-2">
                         <div class="carta p-4 ">
                             <p class="d-flex justify-content-center align-items-center"><span class="servicios-figura"><i class="las la-universal-access"></i></span></p>
-                            <h3 class="h5">Ttexvxv</h3>
+                            <h3 class="h5">Catastro</h3>
                             <p class="textos text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsu
                             </p>
-                            <a href="#" class="btn btn-danger">ver</a>
+                            <a href="Paginas/Servicios-vista.php" class="btn btn-danger">ver</a>
                         </div>
                     </div>
                     <div class="col-md-4 px-md-4 mb-2">
                         <div class="carta p-4 ">
                             <p class="d-flex justify-content-center align-items-center"><span class="servicios-figura"><i class="las la-sign-language"></i></span></p>
-                            <h3 class="h5">Ttexvxv</h3>
+                            <h3 class="h5">Registro Civil</h3>
                             <p class="textos text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsu</p>
-                            <a href="#" class="btn btn-danger">ver</a>
+                            <a href="Paginas/Servicios-vista.php" class="btn btn-danger">ver</a>
                         </div>
                     </div>
                     <div class="col-md-4 px-md-4 mb-2">
                         <div class="carta p-4 ">
                             <p class="d-flex justify-content-center align-items-center"><span class="servicios-figura"><i class="las la-city"></i></span></p>
-                            <h3 class="h5">Ttexvxv</h3>
+                            <h3 class="h5">Hacienda</h3>
                             <p class="textos text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsu</p>
-                            <a href="#" class="btn btn-danger">ver</a>
+                            <a href="Paginas/Servicios-vista.php" class="btn btn-danger">ver</a>
                         </div>
                     </div>
                     <div>
@@ -219,10 +194,10 @@
                                         <div class="col-md-6 text-end">
                                             <img src="img/fijas/Logo-planificacion-publica-600x286.jpg" alt="" width="100%">
                                         </div>
-                                        
+
                                         <div class="col-md-6 d-flex align-items-center">
                                             <div class="">
-                                                
+
                                                 <h4>Fundaindependencia</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis deserunt culpa quod at
                                                     perspiciatis quia sint possimus ut fugiat sequi impedit optio, reiciendis laborum
@@ -232,15 +207,15 @@
                                     </div>
                                 </div>
                             </div>
-                             <div class="carousel-item">
-                            <div class="carta-carrusel d-flex justify-content-center  mb-3">
+                            <div class="carousel-item">
+                                <div class="carta-carrusel d-flex justify-content-center  mb-3">
                                     <div class="row w-75 p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
                                         <div class="col-md-6 text-end">
                                             <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
                                         </div>
                                         <div class="col-md-6 d-flex align-items-center">
                                             <div>
-                                            <h4>Fundaindependencia</h4>
+                                                <h4>Fundaindependencia</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis deserunt culpa quod at
                                                     perspiciatis quia sint possimus ut fugiat sequi impedit optio, reiciendis laborum
                                                     aliquid quidem consectetur laudantium quos asperiores.</p>
@@ -248,16 +223,16 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
-                           <div class="carousel-item">
-                            <div class="carta-carrusel d-flex justify-content-center  mb-3">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carta-carrusel d-flex justify-content-center  mb-3">
                                     <div class="row w-75 p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
                                         <div class="col-md-6 text-end">
                                             <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
                                         </div>
                                         <div class="col-md-6 d-flex align-items-center">
                                             <div>
-                                            <h4>Fundaindependencia</h4>
+                                                <h4>Fundaindependencia</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis deserunt culpa quod at
                                                     perspiciatis quia sint possimus ut fugiat sequi impedit optio, reiciendis laborum
                                                     aliquid quidem consectetur laudantium quos asperiores.</p>
@@ -265,28 +240,16 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-entes" data-bs-slide="prev">
-                        <i class="las la-angle-double-left fs-1 color-oscuro"></i>
+                            <i class="las la-angle-double-left fs-1 color-oscuro"></i>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carousel-entes" data-bs-slide="next">
-                        <i class="las la-angle-double-right fs-1 color-oscuro"></i>
+                            <i class="las la-angle-double-right fs-1 color-oscuro"></i>
                         </button>
                     </div>
-
-                    <!--    <div class="col-md-6 text-end">
-                        <img src="img/Capacho Nuevo_0.jpg" alt="" width="350px">
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis deserunt culpa quod at
-                                perspiciatis quia sint possimus ut fugiat sequi impedit optio, reiciendis laborum
-                                aliquid quidem consectetur laudantium quos asperiores.</p>
-                        </div>
-                    </div> -->
                 </div>
-
             </div>
         </section>
         <section class="datos">
@@ -310,13 +273,13 @@
                     <div class="col-md-3 px-5 mb-2">
                         <h3 class="h1 text-light ">2</h3>
                         <hr>
-                        <h3 class="text-light">Iglesas</h3>
+                        <h3 class="text-light">Iglesias</h3>
                     </div>
                 </div>
             </div>
         </section>
         <section class="noticias">
-            <div class="container p-5">
+            <div class="container py-5 px-md-5">
                 <div class="row p-4">
                     <div class="col-12 text-star">
                         <h3 class="h6">NOVEDADES</h3>
@@ -326,7 +289,7 @@
                 <div class="row">
                     <div class="col-md-4 mb-2">
                         <a href="#">
-                            <div class="carta-noticia text-center">
+                            <div class="carta-noticia text-center shadow">
                                 <span class="noticia-figura-1">Titulos</span>
                                 <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
                                 <span class="noticia-figura-2">Subtitulo</span>
@@ -336,7 +299,7 @@
                     </div>
                     <div class="col-md-4 mb-2">
                         <a href="#">
-                            <div class="carta-noticia text-center">
+                            <div class="carta-noticia text-center shadow">
                                 <span class="noticia-figura-1">Titulos</span>
                                 <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
                                 <span class="noticia-figura-2">Subtitulo</span>
@@ -346,7 +309,7 @@
                     </div>
                     <div class="col-md-4 mb-2">
                         <a href="#">
-                            <div class="carta-noticia text-center">
+                            <div class="carta-noticia text-center shadow">
                                 <span class="noticia-figura-1">Titulos</span>
                                 <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
                                 <span class="noticia-figura-2">Subtitulo</span>
@@ -370,9 +333,9 @@
     </main>
     <footer class="py-2">
         <div class="container ">
-            <div class="row p-5 pb-4">
+            <div class="row py-5 px-md-5 pb-4">
                 <div class="col-6">
-                    <h5 class="text-light">Algo nose</h5>
+                    <h5 class="text-light">Información</h5>
                     <p class="text-light lh-sm"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
                         deserunt, delectus inventore asperiores impedit quia voluptas .</p>
                 </div>
@@ -391,7 +354,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/cargando.js" ></script>
+    <script src="js/cargando.js"></script>
     <script>
         $(document).ready(function() {
             var menu = $('.menu-pegajoso-inicio').offset().top;
@@ -404,7 +367,7 @@
             })
         });
     </script>
-   
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

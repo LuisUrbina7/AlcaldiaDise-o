@@ -23,7 +23,7 @@
                 <h2 class="mb-3">Organigrama Institucional.</h2>
                 <div class="col-12 h-100">
                     <a data-bs-toggle="modal" data-bs-target="#modalOrganigrama">
-                        <div class="contenedor-organigrama h-50 border rounded">
+                        <div class="shadow-sm bg-light contenedor-organigrama h-50 border rounded">
                             <img src="../img/Organigrama-4 (6).svg" alt="organigrama" width="100%">
                         </div>
                     </a>

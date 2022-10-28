@@ -7,9 +7,10 @@
     font-family: sans-serif;
     line-height: 1.3;
 }
+
 :root {
-    --color-primario: #ffbf02;
-    --color-secundario: #fd7b7b;
+    --color-primario: #dc3545;
+    --color-secundario: #ffc107;
     --color-titulo: rgb(26, 26, 26);
     --fuente-secundaria: 'Oswald', sans-serif;
 }
@@ -82,19 +83,22 @@
 /* 
 -----------generales---------- */
 
-header{
+header {
     position: relative;
 }
-header svg:first-child{
+
+header svg:first-child {
     position: absolute;
     top: 0;
     z-index: -1;
 }
-header svg:last-child{
+
+header svg:last-child {
     position: absolute;
     bottom: 0;
     z-index: -1;
 }
+
 h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
@@ -118,6 +122,7 @@ h3 {
     font-weight: 900;
     margin: 0;
 }
+
 #membrete small {
     letter-spacing: 6px;
     margin: 0;
@@ -177,7 +182,8 @@ nav {
     letter-spacing: 1px;
     padding: 4px 0;
 }
-nav a{
+
+nav a {
     font-size: 17px;
 }
 
@@ -186,7 +192,7 @@ nav a{
     width: 100%;
     z-index: 100;
     top: 0;
-    box-shadow: 0 .3rem 1rem rgba(0,0,0,.15)!important;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .15) !important;
     transition: position 2s;
 }
 
@@ -212,7 +218,6 @@ nav a{
 }
 
 .lista-redes {
-    background-color: yellow;
     position: fixed;
     right: -77px;
     bottom: 40%;
@@ -268,6 +273,23 @@ nav a{
     right: 0;
 }
 
+.carrusel-foto .carousel-caption a {
+    text-decoration: none;
+    padding: 7px 30px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid var(--color-secundario);
+    color: var(--color-secundario);
+    transition: background-color 0.5s, color 1s;
+}
+
+.carrusel-foto .carousel-caption a:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-titulo);
+    transition: background-color 0.5s, color 1s;
+}
+
+
 /* Figuras de seccion alcade */
 .alcalde {
 
@@ -314,7 +336,7 @@ nav a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /*  background-color: rgba(0, 255, 255, 0.226); */
+    overflow: hidden;
     z-index: 5;
 
 }
@@ -352,8 +374,11 @@ nav a{
 
 .cuadro {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+}
+.cuadro img {
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
 }
 
 /* Seccon servicios */
@@ -522,8 +547,8 @@ footer h5 {
 .pagina-noticias aside {
 
     border-top: 5px solid var(--color-primario);
-    border-left: 2px solid rgba(0, 0, 0, .125);
     padding: 10px 10px;
+    box-shadow: -9px 0px 12px 0px #f3f3f3f5;
 
 }
 
@@ -534,7 +559,6 @@ footer h5 {
 
 .ventana-twitter div {
     height: 300px;
-    overflow-y: scroll;
     overflow-x: hidden;
 }
 
@@ -553,27 +577,33 @@ footer h5 {
     height: 78px;
     background-color: var(--color-primario);
 }
-.noticias-enlaces .whatsapp{
-background-color: #25D366;
-color: white;
+
+.noticias-enlaces .whatsapp {
+    background-color: #25D366;
+    color: white;
 }
-.noticias-enlaces .whatsapp:hover{
-background-color: #128c7e;
-color: white;
+
+.noticias-enlaces .whatsapp:hover {
+    background-color: #128c7e;
+    color: white;
 }
-.noticias-enlaces .facebook{
-background-color: #4664a5;
-color: white;
+
+.noticias-enlaces .facebook {
+    background-color: #4664a5;
+    color: white;
 }
-.noticias-enlaces .facebook:hover{
-background-color: #3b5388;
+
+.noticias-enlaces .facebook:hover {
+    background-color: #3b5388;
 }
-.noticias-enlaces .twitter{
-background-color: #1c96e9;
-color: white;
+
+.noticias-enlaces .twitter {
+    background-color: #1c96e9;
+    color: white;
 }
-.noticias-enlaces .twitter:hover{
-background-color: #1780c5;
+
+.noticias-enlaces .twitter:hover {
+    background-color: #1780c5;
 }
 
 /* ------comentarios------- */
@@ -648,9 +678,16 @@ background-color: #1780c5;
     border-left: 3px solid rgba(0, 0, 0, .125);
 }
 
+.municipio-turismo {
+    background-color: #f0f4f7;
+}
+
 /* 
 ------Pagina alcaldia----------
  */
+.organigrama {
+    background-color: #f0f4f7;
+}
 
 .contenedor-organigrama {
     position: relative;
@@ -688,7 +725,8 @@ background-color: #1780c5;
     width: 100%;
     z-index: -1;
 }
-#espacio-alcaldia{
+
+#espacio-alcaldia {
     width: 100%;
     height: 30vh;
     background-position: center;
@@ -698,18 +736,125 @@ background-color: #1780c5;
     background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 35%)), url('../img/fijas/Capacho\ Nuevo_15a.JPG');
 }
 
-/* ----------------Pagina alcaldia--------------- */
+/* ----------------Pagina entes--------------- */
 
-.entes-cartas ol li{
+.entes-cartas ol li {
     margin: 8px 0;
 
 }
+
+.entes-barra {
+    width: 50px;
+    height: 272px;
+    background-color: var(--color-titulo);
+    position: relative;
+}
+
+#primera {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--color-secundario);
+    animation-name: primera-barra;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+#segunda {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--color-secundario);
+    animation-name: segunda-barra;
+    animation-duration: 4s;
+    animation-timing-function:ease;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+#tercera {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--color-secundario);
+    animation-name: tercera-barra;
+    animation-duration: 4s;
+    animation-timing-function:ease;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+}
+
+#entes-efecto-titulo{
+    animation-name: efecto-titulo;
+    animation-duration: 1s;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes primera-barra {  
+
+    0%{
+        height: 0%;
+    }
+    100%{
+    
+        height: 100%;
+    }
+    
+}
+@keyframes segunda-barra {  
+
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+    
+}
+@keyframes efecto-titulo {  
+
+    0%{
+      
+    }
+    100%{
+        font-size: 30px;
+        color: var(--color-secundario);
+    }
+    
+}
+@keyframes tercera-barra {  
+
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+    
+}
+
 @media(max-width:400px) {
     .entes .servicios-entes-figura::before {
         display: none;
     }
+
     #membrete {
         font-size: 24px;
         padding: 2px 2px;
+    }
+
+    header svg:first-child {
+        height: 90px;
+        width: 100%;
+    }
+    .entes-barra{
+        width: 19px;
     }
 }

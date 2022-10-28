@@ -14,6 +14,15 @@
 <body>
     <?php include('../cargador/cargando.php') ?>
     <header>
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(220, 53, 69, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,15L480,30L960,90L1440,0L1920,75L2400,45L2880,45L3360,15L3840,15L4320,75L4800,0L5280,0L5760,45L6240,75L6720,90L7200,105L7680,135L8160,60L8640,135L9120,90L9600,120L10080,30L10560,75L11040,60L11520,120L11520,150L11040,150L10560,150L10080,150L9600,150L9120,150L8640,150L8160,150L7680,150L7200,150L6720,150L6240,150L5760,150L5280,150L4800,150L4320,150L3840,150L3360,150L2880,150L2400,150L1920,150L1440,150L960,150L480,150L0,150Z"></path>
+        </svg>
         <div class="d-flex">
             <marquee behavior="" direction="letf" class="py-1">Carrera 06 frente a la Plaza Bolivar de Independecia, Edif. sede Alcaldia, Municipio Capacho Nuevo, Estado Táchira</marquee>
         </div>
