@@ -1,30 +1,35 @@
 <?php include('../Plantilla/Encabezado.php') ?>
 <main>
     <section>
-        <h1>pagina en desarrollo....</h1>
         <div class="container">
             <div class="row py-5 align-items-center">
                 <h2>Entes Descentralizados</h2>
                 <div class="col-12 col-md-5">
                     <h3>Fundaindependencia</h3>
+                    <div class="text-center">
+                        <img src="../img/fijas/FUNDAINDEPENDENCIA.png" alt="Logo" width="auto" height="185px">
+                    </div>
                 </div>
                 <div class="col-1">
-                 <div class="entes-barra shadow" >
-                   <p id="primera"></p>
-                 </div>
+                    <div class="entes-barra shadow">
+                        <p id="primera"></p>
+                    </div>
                 </div>
                 <div class="col-11 col-md-6">
                     <div class="entes-cartas">
-                        <h4> Mision</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae minus blanditiis, qui iure amet? At non amet fuga aperiam unde dolor qui autem, quaerat totam ipsum error id enim!</p>
+                        <h4> Misión</h4>
+                        <p>Diseñar y ejecutar programas de bienestar social dirigidos a individuos y a las comunidades organizadas impulsando el crecimiento en las áreas de vivienda, salud, educación, cultura, deporte recreación y de emprendimiento económico a fin de promover el desarrollo del municipio con la participación ciudadana para rescatar los valores y mejorar la calidad de vida de las familias.</p>
                     </div>
                     <div class="entes-cartas">
-                        <h4>Vision</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis amet porro, soluta laudantium reiciendis hic cupiditate corrupti tenetur doloremque iste culpa officia totam possimus dignissimos expedita, illum obcaecati, sit alias!</p>
+                        <h4>Visión</h4>
+                        <p>Lograr la excelencia de la fundación para el desarrollo social del Municipio Capacho Nuevo, en el marco de ejecución de programas y proyectos sociales sustentables, a través de la gestión pública, efectiva, eficiente, suficiente y eficaz, como órgano de sensibilidad social en beneficio de la población, coadyuvando a elevar la calidad de vida.</p>
                     </div>
                 </div>
                 <div class="d-md-none d-block">
                     <h3>Instituto de Cultura y Turismo</h3>
+                    <div class="text-center">
+                        <img src="../img/fijas/Logo-planificacion-publica.jpg" alt="Logo" width="100%" height="185px">
+                    </div>
                 </div>
                 <div class="col-11 col-md-6 text-end">
                     <div class="entes-cartas">
@@ -37,17 +42,31 @@
                     </div>
                 </div>
                 <div class="col-1">
-                <div class="entes-barra shadow">
-                <p id="segunda"></p>
-                 </div>
+                    <div class="entes-barra shadow">
+                        <p id="segunda"></p>
+                    </div>
                 </div>
                 <div class="col-12 col-md-5 d-none d-md-block">
                     <h3>Instituto de Cultura y Turismo</h3>
+                    <div class="text-center">
+                        <img src="falta" alt="Logo" width="100%" height="185px">
+                    </div>
                 </div>
             </div>
-            <div class="row shadow py-3 rounded-1" style="background-color: #f0f4f7;">
-                <h3 class="text-center mb-3 color-oscuro" id="entes-efecto-titulo">Consejo Local de Planificación Pública</h3>
+
+
+        </div>
+    </section>
+    <section style="background-color: #f0f4f7; padding:30px 0px" >
+        <div class="container">
+
+            <div class="row shadow py-3 px-md-3 rounded-1 bg-light" >
+                <h3 class="text-center mb-3 color-oscuro h1" id="entes-efecto-titulo">Consejo Local de Planificación Pública</h3>
                 <div class="col-md-12">
+                    <div class="text-center">
+                        <img src="../img/fijas/Logo-planificacion-publica.jpg" alt="Logo" width="350px" height="auto">
+                    </div>
+                    <p class="text-center">Teléfono: 0276-7881617 / 0424:7210804. Correo electrónico: c.l.p.p.capachon@gmail.com</p>
                     <div class="entes-cartas ">
                         <h4 class="mx-4"> Mision</h4>
                         <ol>
@@ -68,14 +87,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
             <div class="row py-5 align-items-center">
                 <div class="col-md-5">
                     <h3>Instituto de Deporte Recreacion y juventud</h3>
+                    <div class="text-center">
+                        <img src="../img/fijas/logo-nuevo-deporte.png" alt="Logo" width="100%" height="100%">
+                    </div>
                 </div>
                 <div class="col-1">
-                 <div class="entes-barra shadow" >
-                   <p id="tercera"></p>
-                 </div>
+                    <div class="entes-barra shadow">
+                        <p id="tercera"></p>
+                    </div>
                 </div>
                 <div class="col-11 col-md-6">
                     <div class="entes-cartas">
@@ -89,6 +115,9 @@
                 </div>
             </div>
         </div>
+
+
     </section>
+
 </main>
 <?php include('../Plantilla/Pie.php') ?>

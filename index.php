@@ -26,13 +26,14 @@
         <div class="d-flex">
             <marquee behavior="" direction="letf" class="py-1">Carrera 06 frente a la Plaza Bolivar de Independecia, Edif. sede Alcaldia, Municipio Capacho Nuevo, Estado Táchira</marquee>
         </div>
-        <div class="container py-2 d-flex align-items-center">
+        <div class="p-3 d-flex align-items-center">
 
-            <img src="img/escudo.png" alt="Escudo" width="100px" height="100px">
+            <img src="img/fijas/Logo-puro.png" alt="Escudo" width="146px" height="145px">
             <div class="titulo-encabezado lh-1 mx-md-4 d-flex w-100">
                 <img src="img/Barras.png" alt="Titulo">
-                <h1 id="membrete"> ALCALDIA BOLIVARIANA DEL MUNICIPIO <br> <small class="h3 d-none d-md-block">CAPACHO NUEVO DEL ESTADO TACHIRA</small> </h1>
+                <h1 id="membrete"> ALCALDIA BOLIVARIANA DEL MUNICIPIO <br> <small class="h3 d-none d-md-block">CAPACHO NUEVO DEL ESTADO TACHIRA</small> </h1>  
             </div>
+            <img src="img/fijas/luis_mendoza.png" alt="LuisGomez" width="173px" height="109px" id="membreteLuisMendoza">
         </div>
         <nav class="menu-pegajoso-inicio">
             <div class="container navegador">
@@ -127,13 +128,13 @@
                             <div class="px-5">
                                 <h3 class="h4">Luis Mendoza</h3>
                                 <p class="textos ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorum, nemo saepe id ut asperiores. </p>
-                                <a href="btn" class="btn btn-danger">Leer mas</a>
+                                <a href="Paginas/Alcaldia.php" class="btn btn-danger">Leer mas</a>
                             </div>
                         </div>
                        
                     </div>
-                    <div class="col-md-5 cuadro  p-0 ">
-                        <img src="img/fijas/fotoprueba-removebg-preview.png" alt="foto" class="d-none d-md-block" width="450px" height="450px">
+                    <div class="col-md-5  p-0 position-relative">
+                        <img src="img/fijas/alcalde02.png" alt="foto" class="d-none d-md-block position-absolute" width="450px" height="450px">
                     </div>
                 </div>
             </div>
@@ -191,17 +192,14 @@
                             <div class="carousel-item active ">
                                 <div class="carta-carrusel d-flex justify-content-center mb-3">
                                     <div class="row w-75  p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
-                                        <div class="col-md-6 text-end">
-                                            <img src="img/fijas/Logo-planificacion-publica-600x286.jpg" alt="" width="100%">
+                                        <div class="col-md-7 text-center">
+                                            <img src="img/fijas/FUNDAINDEPENDENCIA.png" alt="foto"  width="270px" height="244px">
                                         </div>
 
-                                        <div class="col-md-6 d-flex align-items-center">
-                                            <div class="">
-
-                                                <h4>Fundaindependencia</h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis deserunt culpa quod at
-                                                    perspiciatis quia sint possimus ut fugiat sequi impedit optio, reiciendis laborum
-                                                    aliquid quidem consectetur laudantium quos asperiores.</p>
+                                        <div class="col-md-5 d-flex align-items-center">
+                                            <div>
+                                                <h3 class="text-dark">Fundaindependencia</h3>
+                                                <p>Informacion</p>
                                             </div>
                                         </div>
                                     </div>
@@ -210,15 +208,14 @@
                             <div class="carousel-item">
                                 <div class="carta-carrusel d-flex justify-content-center  mb-3">
                                     <div class="row w-75 p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
-                                        <div class="col-md-6 text-end">
-                                            <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
+                                        <div class="col-md-7 text-end">
+                                            <img src="img/fijas/Logo-planificacion-publica.png" alt="foto" width="100%" height="244px">
+                                            
                                         </div>
-                                        <div class="col-md-6 d-flex align-items-center">
+                                        <div class="col-md-5 d-flex align-items-center">
                                             <div>
-                                                <h4>Fundaindependencia</h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis deserunt culpa quod at
-                                                    perspiciatis quia sint possimus ut fugiat sequi impedit optio, reiciendis laborum
-                                                    aliquid quidem consectetur laudantium quos asperiores.</p>
+                                                <h3  class="text-dark">Consejo Local de Planificacion Pública</h3>
+                                                <p>Teléfono: 0276-7881617 / 0424:7210804. Correo electrónico: c.l.p.p.capachon@gmail.com</p>
                                             </div>
                                         </div>
                                     </div>
@@ -227,15 +224,13 @@
                             <div class="carousel-item">
                                 <div class="carta-carrusel d-flex justify-content-center  mb-3">
                                     <div class="row w-75 p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
-                                        <div class="col-md-6 text-end">
-                                            <img src="img/Capacho Nuevo_0.jpg" alt="" width="100%">
+                                        <div class="col-md-7 text-end">
+                                            <img src="img/fijas/logo-nuevo-deporte.png" alt="" width="100%"  height="244px">
                                         </div>
-                                        <div class="col-md-6 d-flex align-items-center">
+                                        <div class="col-md-5 d-flex align-items-center">
                                             <div>
-                                                <h4>Fundaindependencia</h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis deserunt culpa quod at
-                                                    perspiciatis quia sint possimus ut fugiat sequi impedit optio, reiciendis laborum
-                                                    aliquid quidem consectetur laudantium quos asperiores.</p>
+                                                <h3  class="text-dark">Instituto de Deporte Recreacion y juventud</h3>
+                                                <p>Informacion</p>
                                             </div>
                                         </div>
                                     </div>
@@ -283,7 +278,7 @@
                 <div class="row p-4">
                     <div class="col-12 text-star">
                         <h3 class="h6">NOVEDADES</h3>
-                        <h2 class="sub-raya justify-content-start"> <span class="mx-3">+</span> Ultimas Noticias</h2>
+                        <h2 class="sub-raya justify-content-start"> <span class="mx-3">+</span> Ultimos Proyectos</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -317,12 +312,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-4">
-
-                    </div>
-                    <div class="col-4">
-
-                    </div>
+                   
                 </div>
         </section>
         <section class="mapa">

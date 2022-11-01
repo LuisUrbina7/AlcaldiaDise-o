@@ -4,11 +4,11 @@
             <div class="container">
                 <div class="row pt-5">
                     <div class="col-md-6 text-center ">
-                        <img src="../img/escudo.png" alt="escudo" width="237px">
+                        <img src="../img/fijas/LOGO VERTICAL NUEVO (1).png" alt="escudo" width="237px">
                         <p> <small class="text-muted">Escudo</small></p>
                     </div>
                     <div class="col-md-6 text-center ">
-                        <img src="../img/bandera.png" alt="bandera" width="350px">
+                        <img src="../img/fijas/bandera.png" alt="bandera" width="350px">
                         <p> <small class="text-muted">Bandera</small></p>
                     </div>
                 </div>
