@@ -9,7 +9,7 @@
 }
 
 :root {
-    --color-primario: #dc3545;
+    --color-primario:#f10017;
     --color-secundario: #ffc107;
     --color-titulo: rgb(26, 26, 26);
     --fuente-secundaria: 'Oswald', sans-serif;
@@ -115,29 +115,29 @@ h3 {
 }
 
 #membrete {
-    font-size: 60px;
+    font-size: 61px;
     font-family: 'Oswald', sans-serif;
     padding: 2px 10px;
-    line-height: 0.9;
+    line-height: 0.4;
     font-weight: 900;
+    text-shadow: 4px 1px 6px #6c757d3d;
     margin: 0;
 }
 
 #membrete small {
-    letter-spacing: 10px;
+    letter-spacing: 11px;
+    color: var(--color-primario);
     margin: 0;
+    font-weight: 700;
 }
 #membreteLuisMendoza{
     width: 173px;
-    position: absolute;
-    bottom: 53px;
     right: 0;
-    z-index: -1;
 }
 
 h2 {
     font-family: 'Lobster', cursive;
-    font-size: 32px;
+    font-size: 55px;
     position: relative;
     display: flex;
     color: var(--color-titulo);
@@ -177,17 +177,17 @@ h2 {
 
 
 marquee {
-    background-color: var(--color-primario);
-    color: #f8f9fa;
-    font-size: 14px;
+    background-color:var(--color-primario);
+    color:  #ffffff;
+    font-size: 11px;
 }
 
 nav {
-    background-color: var(--color-primario);
+    background-color: #ffffff;
     transition: position 2s;
     position: relative;
     letter-spacing: 1px;
-    padding: 4px 0;
+    padding: 0px 0;
 }
 
 nav a {
@@ -205,14 +205,21 @@ nav a {
 
 .nav-item {
     position: relative;
-    padding: 2px 0;
+    padding: 3px 10px;
+}
+.nav-item a {
+    color: var(--color-primario);
+}
+.nav li:first-child{
+    background-color: var(--color-primario);
+    color: white;
 }
 
 .nav-item::before {
     content: '';
     bottom: 4px;
     left: 0;
-    background-color: white;
+    background-color: var(--color-primario);
     position: absolute;
     height: 4px;
     width: 0;
@@ -223,7 +230,36 @@ nav a {
     width: 100%;
     transition: width 1s;
 }
+.nav .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 0;
+    transition: all 0.5s ease;
+}
+.nav .dropdown-menu .dropdown-item{
+    color: white;
+}
 
+
+/* Menu lateral */
+.offcanvas-body ul{
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.offcanvas-body ul li{
+    padding: 14px 2px;
+}
+.offcanvas-body ul li:hover{
+    background-color: #f0f4f7;
+}
+.offcanvas-body ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.offcanvas-body ul li:hover a{
+    color: black;
+}
 .lista-redes {
     position: fixed;
     right: -77px;
@@ -851,13 +887,19 @@ footer h5 {
     
 }
 
-@media(max-width:400px) {
+@media(max-width:520px) {
     .entes .servicios-entes-figura::before {
         display: none;
     }
 
     #membrete {
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 0.7;
+        padding: 2px 2px;
+    }
+    #membrete small {
+        font-size: 12px;
+        letter-spacing: 1px;
         padding: 2px 2px;
     }
 
@@ -867,5 +909,11 @@ footer h5 {
     }
     .entes-barra{
         width: 19px;
+    }
+    .nav{
+    display: none;
+    }
+    #pagina-inicial-escudo{
+    width: 60px;
     }
 }

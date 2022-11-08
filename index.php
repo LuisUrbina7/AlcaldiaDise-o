@@ -12,60 +12,86 @@
 </head>
 
 <body>
-    <?php include('cargador/cargando.php') ?>
-    <header>
-        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                    <stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop>
-                    <stop stop-color="rgba(220, 53, 69, 1)" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,15L480,30L960,90L1440,0L1920,75L2400,45L2880,45L3360,15L3840,15L4320,75L4800,0L5280,0L5760,45L6240,75L6720,90L7200,105L7680,135L8160,60L8640,135L9120,90L9600,120L10080,30L10560,75L11040,60L11520,120L11520,150L11040,150L10560,150L10080,150L9600,150L9120,150L8640,150L8160,150L7680,150L7200,150L6720,150L6240,150L5760,150L5280,150L4800,150L4320,150L3840,150L3360,150L2880,150L2400,150L1920,150L1440,150L960,150L480,150L0,150Z"></path>
-        </svg>
-        <div class="d-flex">
-            <marquee behavior="" direction="letf" class="py-1">Carrera 06 frente a la Plaza Bolivar de Independecia, Edif. sede Alcaldia, Municipio Capacho Nuevo, Estado Táchira</marquee>
-        </div>
-        <div class="p-3 d-flex align-items-center">
 
-            <img src="img/fijas/Logo-puro.png" alt="Escudo" width="146px" height="145px">
-            <div class="titulo-encabezado lh-1 mx-md-4 d-flex w-100">
-                <img src="img/Barras.png" alt="Titulo">
-                <h1 id="membrete"> ALCALDIA BOLIVARIANA DEL MUNICIPIO <br> <small class="h3 d-none d-md-block">CAPACHO NUEVO DEL ESTADO TACHIRA</small> </h1>  
+    <header>
+        
+        
+        <div class=" d-flex align-items-center" style="background: #f6f8ff;">
+            <img src="img/fijas/Logo-puro.png" alt="Escudo" width="100px" height="auto" id="pagina-inicial-escudo">
+            <div class="titulo-encabezado lh-1 d-flex w-100">
+                <h1 id="membrete" class="mx-auto"> ALCALDIA BOLIVARIANA DEL MUNICIPIO <br> <small class="h3">CAPACHO NUEVO DEL ESTADO TACHIRA</small> </h1>
             </div>
-            <img src="img/fijas/luis_mendoza.png" alt="LuisGomez" width="173px" height="109px" id="membreteLuisMendoza">
+            <img src="img/fijas/luis_mendoza.png" alt="LuisGomez" width="90px" height="auto" id="membreteLuisMendoza" class="d-none d-md-block">
         </div>
         <nav class="menu-pegajoso-inicio">
+             <!--   -----Menu Horizontal---- -->
             <div class="container navegador">
-                <ul class="nav justify-content-center">
+                <button class="navbar-toggler d-md-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#ejemplo" aria-controls="ejemplo"><i class="las la-ellipsis-v"></i></button>
+                <ul class="nav justify-content-center ">
                     <li class="nav-item"><a href="index.php" class="nav-link text-light">Inicio</a></li>
-                    <li class="nav-item"><a href="Paginas/Alcaldia.php" class="nav-link text-light">Alcandia</a></li>
-                    <li class="nav-item"><a href="Paginas/Municipio.php" class="nav-link text-light">Municipio</a></li>
-                    <li class="nav-item"><a href="Paginas/Entes.php" class="nav-link text-light">Entes</a></li>
+                    <li class="nav-item"><a href="Paginas/noticias.php" class="nav-link">Noticias</a></li>
+                    <li class="nav-item"><a href="Paginas/Alcaldia.php" class="nav-link">Alcaldia</a></li>
+                    <li class="nav-item"><a href="Paginas/Municipio.php" class="nav-link">Municipio</a></li>
+                    <li class="nav-item"><a href="Paginas/Entes.php" class="nav-link">Entes</a></li>
+                   
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Planillas de Solictud
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="Paginas/Servicios-vista.php">Catastro</a></li>
-                            <li><a class="dropdown-item" href="Paginas/Servicios-vista.php">Registro Civil</a></li>
+                            <li><a class="dropdown-item" href="Paginas/Servicios-vista.php">+ Catastro</a></li>
+                            <li><a class="dropdown-item" href="Paginas/servicios-registro-civil.php">+ Registro Civil</a></li>
+                            <li><a class="dropdown-item" href="Paginas/servicios-hacienda.php">+ Hacienda Municipal</a></li>
+                            <li><a class="dropdown-item" href="Paginas/servicios-sindicatura.php">+ Sindicatura</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="Paginas/noticias.php" class="nav-link text-light">Noticias</a></li>
                 </ul>
             </div>
+            <!--   -----Menu lateral---- -->
+            <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="ejemplo" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="text-light">Menù</h5>
+                    <a type="button"  data-bs-dismiss="offcanvas" aria-label="close">
+                    <i class="las la-times text-light fs-1"></i></a>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <li><a href="index.php">Inicio</a></li>
+                        <li><a href="Paginas/noticias.php">Noticias</a></li>
+                        <li><a href="Paginas/Alcaldia.php">Alcaldia</a></li>
+                        <li><a href="Paginas/Municipio.php">Municipio</a></li>
+                        <li><a href="Paginas/Entes.php">Entes</a></li>
+                        <div>
+                            <a class=" collapsed w-100 btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#uno" aria-expanded="false">Planillas de Solictud</a>
+                            <div id="uno" class="collapse">
+                                    <ul>
+                                        <li><a class="dropdown-item" href="Paginas/Servicios-vista.php">+ Catastro</a></li>
+                                        <li><a class="dropdown-item" href="Paginas/Servicios-vista.php">+ Registro Civil</a></li>
+                                        <li><a class="dropdown-item" href="Paginas/servicios-hacienda.php">+ Hacienda Municipal</a></li>
+                                        <li><a class="dropdown-item" href="Paginas/servicios-sindicatura.php">+ Sindicatura</a></li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
+
+        <div class="d-flex">
+            <marquee behavior="" direction="letf" class="py-1">Carrera 06 frente a la Plaza Bolivar de Independecia, Sede Alcaldia, Municipio Capacho Nuevo, Estado Táchira</marquee>
+        </div>
         <ul class="lista-redes d-none d-md-block">
             <li><a class="instagram" href="https://www.instagram.com/alcaldia_capachonuevo/"><i class="lab la-instagram fs-2 text-light p-2"></i> Instagram</a></li>
             <li> <a class="facebook" href=""><i class="lab la-facebook-f fs-2 text-light p-2"></i> Facebook</a></li>
             <li><a class="twitter" href=""><i class="lab la-twitter fs-2 text-light p-2"></i> twitter</a> </li>
         </ul>
-
     </header>
     <main>
         <!--  -----obras publicas, proteccion civil, desarrollo social, Novedades, cultura y turismo, Deporte y recreación,servicios generales---- -->
-        
+
         <section class="deslizador">
+
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -74,19 +100,19 @@
                 </div>
                 <div class="carousel-inner carrusel-foto">
                     <div class="carousel-item active">
-                        <img src="img/Capacho Nuevo_0.jpg" class="d-block w-100" alt="...">
+                        <img src="img/fijas/noticia-1.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-md-block">
                             <h3 class="fs-1">Titulo de Noticia numero 1</h3>
                             <p class="text-light fs-5">Titulo de Noticia numero 2</p>
-                            <a href="#" > Visualizar</a>
+                            <a href="#"> Visualizar</a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Capacho Nuevo_0.jpg" class="d-block w-100" alt="...">
+                        <img src="img/fijas/noticia-2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption  d-md-block">
                             <h3 class="fs-1">Titulo de Noticia numero 3</h3>
                             <p class="text-light fs-5">Some representative placeholder content for the third slide.</p>
-                            <a href="#" > Visualizar</a>
+                            <a href="#"> Visualizar</a>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -94,7 +120,7 @@
                         <div class="carousel-caption d-md-block">
                             <h3 class="fs-1">Titulo de Noticia numero 1</h3>
                             <p class="text-light fs-5">Some representative placeholder content for the third slide.</p>
-                            <a href="#" > Visualizar</a>
+                            <a href="#"> Visualizar</a>
                         </div>
                     </div>
                 </div>
@@ -110,8 +136,13 @@
         </section>
         <section>
             <div class="espacio-publicitario d-flex">
-                <img src="publicidad/gifuno.gif" alt="gid" width="50%" height="160px">
-                <img src="publicidad/gifdos.gif" alt="gid" width="50%" height="160px">
+                <img src="publicidad/gifuno.gif" alt="gid" width="14.3%" height="120px">
+                <img src="publicidad/giftres.gif" alt="gid" width="14.3%" height="120px">
+                <img src="publicidad/gifcuatro.gif" alt="gid" width="14.3%" height="120px">
+                <img src="publicidad/download.png" alt="gid" width="14.3%" height="120px">
+                <img src="publicidad/cocacola.jpg" alt="gid" width="14.3%" height="120px">
+                <img src="publicidad/cocacola.jpg" alt="gid" width="14.3%" height="120px">
+                <img src="publicidad/download.png" alt="gid" width="14.3%" height="120px">
             </div>
         </section>
         <section class="alcalde">
@@ -131,7 +162,6 @@
                                 <a href="Paginas/Alcaldia.php" class="btn btn-danger">Leer mas</a>
                             </div>
                         </div>
-                       
                     </div>
                     <div class="col-md-5  p-0 position-relative">
                         <img src="img/fijas/alcalde02.png" alt="foto" class="d-none d-md-block position-absolute" width="450px" height="450px">
@@ -140,7 +170,7 @@
             </div>
             <span></span>
         </section>
-        
+
         <section class="servicios">
             <div class="container py-4">
                 <div class="row py-4 text-center">
@@ -169,7 +199,7 @@
                             <p class="d-flex justify-content-center align-items-center"><span class="servicios-figura"><i class="las la-city"></i></span></p>
                             <h3 class="h5">Hacienda</h3>
                             <p class="textos text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsu</p>
-                            <a href="Paginas/Servicios-vista.php" class="btn btn-danger">ver</a>
+                            <a href="Paginas/servicios-hacienda.php" class="btn btn-danger">ver</a>
                         </div>
                     </div>
                     <div>
@@ -193,13 +223,14 @@
                                 <div class="carta-carrusel d-flex justify-content-center mb-3">
                                     <div class="row w-75  p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
                                         <div class="col-md-7 text-center">
-                                            <img src="img/fijas/FUNDAINDEPENDENCIA.png" alt="foto"  width="270px" height="244px">
+                                            <img src="img/fijas/FUNDAINDEPENDENCIA.png" alt="foto" width="270px" height="244px">
                                         </div>
 
                                         <div class="col-md-5 d-flex align-items-center">
                                             <div>
                                                 <h3 class="text-dark">Fundaindependencia</h3>
-                                                <p>Informacion</p>
+                                                <p>Teléfono: 0424-7462137 <br> Correo electrónico:
+                                                <small>Fundaindependenciacapachonuevo@gmail.com</small>  </p>
                                             </div>
                                         </div>
                                     </div>
@@ -210,11 +241,11 @@
                                     <div class="row w-75 p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
                                         <div class="col-md-7 text-end">
                                             <img src="img/fijas/Logo-planificacion-publica.png" alt="foto" width="100%" height="244px">
-                                            
+
                                         </div>
                                         <div class="col-md-5 d-flex align-items-center">
                                             <div>
-                                                <h3  class="text-dark">Consejo Local de Planificacion Pública</h3>
+                                                <h3 class="text-dark">Consejo Local de Planificacion Pública</h3>
                                                 <p>Teléfono: 0276-7881617 / 0424:7210804. Correo electrónico: c.l.p.p.capachon@gmail.com</p>
                                             </div>
                                         </div>
@@ -225,12 +256,14 @@
                                 <div class="carta-carrusel d-flex justify-content-center  mb-3">
                                     <div class="row w-75 p-md-3 mb-dm-3 shadow-sm servicios-entes-figura">
                                         <div class="col-md-7 text-end">
-                                            <img src="img/fijas/logo-nuevo-deporte.png" alt="" width="100%"  height="244px">
+                                            <img src="img/fijas/logo-nuevo-deporte.png" alt="" width="100%" height="244px">
                                         </div>
                                         <div class="col-md-5 d-flex align-items-center">
                                             <div>
-                                                <h3  class="text-dark">Instituto de Deporte Recreacion y juventud</h3>
-                                                <p>Informacion</p>
+                                                <h3 class="text-dark">Instituto de Deporte Recreacion y juventud</h3>
+                                                <p>Teléfono: 0424-7243816 <br> Correo electrónico:
+                                                <small>nrichardomar@gmail.com</small>  </p>
+                                                <a href="https://www.instagram.com/direcciondeportecapachonuevo/" target="_blank"><i class="lab la-instagram fs-1 text-light"></i> direcciondeportecapachonuevo</a>
                                             </div>
                                         </div>
                                     </div>
@@ -312,7 +345,7 @@
                             </div>
                         </a>
                     </div>
-                   
+
                 </div>
         </section>
         <section class="mapa">
@@ -325,9 +358,8 @@
         <div class="container ">
             <div class="row py-5 px-md-5 pb-4">
                 <div class="col-6">
-                    <h5 class="text-light">Información</h5>
-                    <p class="text-light lh-sm"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-                        deserunt, delectus inventore asperiores impedit quia voluptas .</p>
+                    <h5 class="text-light">Lema</h5>
+                    <h2 class="text-light lh-sm h3">En Capacho Nuevo... Renace la Esperanza!!!</h2>
                 </div>
                 <div class="col-6">
                     <h5 class="text-light">Horarios de atencion al ciudadano.</h5>
@@ -343,7 +375,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/cargando.js"></script>
     <script>
         $(document).ready(function() {
@@ -357,7 +389,6 @@
             })
         });
     </script>
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

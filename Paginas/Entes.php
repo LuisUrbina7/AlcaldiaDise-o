@@ -64,7 +64,7 @@
                 <h3 class="text-center mb-3 color-oscuro h1" id="entes-efecto-titulo">Consejo Local de Planificación Pública</h3>
                 <div class="col-md-12">
                     <div class="text-center">
-                        <img src="../img/fijas/Logo-planificacion-publica.jpg" alt="Logo" width="350px" height="auto">
+                        <img src="../img/fijas/Logo-planificacion-publica.png" alt="Logo" width="350px" height="auto">
                     </div>
                     <p class="text-center">Teléfono: 0276-7881617 / 0424:7210804. Correo electrónico: c.l.p.p.capachon@gmail.com</p>
                     <div class="entes-cartas ">

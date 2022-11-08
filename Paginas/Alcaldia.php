@@ -25,7 +25,7 @@
                 <div class="col-12 h-100 ">
                     <a data-bs-toggle="modal" data-bs-target="#modalOrganigrama">
                         <div class="shadow-sm bg-light contenedor-organigrama h-50 border rounded">
-                            <img src="../img/Organigrama-4 (6).svg" alt="organigrama" width="100%">
+                            <img src="../img/fijas/organigrama-real.png" alt="organigrama" width="100%">
                         </div>
                     </a>
                 </div>
@@ -105,7 +105,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="../img/Organigrama-4 (6).svg" alt="organigrama" width="100%">
+                    <img src="../img/fijas/organigrama-real.png" alt="organigrama" width="100%">
                 </div>
             </div>
         </div>
