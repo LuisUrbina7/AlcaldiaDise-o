@@ -14,8 +14,8 @@
 <body>
 
     <header>
-        
-        
+
+
         <div class=" d-flex align-items-center" style="background: #f6f8ff;">
             <img src="img/fijas/Logo-puro.png" alt="Escudo" width="100px" height="auto" id="pagina-inicial-escudo">
             <div class="titulo-encabezado lh-1 d-flex w-100">
@@ -24,7 +24,7 @@
             <img src="img/fijas/luis_mendoza.png" alt="LuisGomez" width="90px" height="auto" id="membreteLuisMendoza" class="d-none d-md-block">
         </div>
         <nav class="menu-pegajoso-inicio">
-             <!--   -----Menu Horizontal---- -->
+            <!--   -----Menu Horizontal---- -->
             <div class="container navegador">
                 <button class="navbar-toggler d-md-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#ejemplo" aria-controls="ejemplo"><i class="las la-ellipsis-v"></i></button>
                 <ul class="nav justify-content-center ">
@@ -33,7 +33,7 @@
                     <li class="nav-item"><a href="Paginas/Alcaldia.php" class="nav-link">Alcaldia</a></li>
                     <li class="nav-item"><a href="Paginas/Municipio.php" class="nav-link">Municipio</a></li>
                     <li class="nav-item"><a href="Paginas/Entes.php" class="nav-link">Entes</a></li>
-                   
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Planillas de Solictud
@@ -51,8 +51,8 @@
             <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="ejemplo" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
                     <h5 class="text-light">Menù</h5>
-                    <a type="button"  data-bs-dismiss="offcanvas" aria-label="close">
-                    <i class="las la-times text-light fs-1"></i></a>
+                    <a type="button" data-bs-dismiss="offcanvas" aria-label="close">
+                        <i class="las la-times text-light fs-1"></i></a>
                 </div>
                 <div class="offcanvas-body">
                     <ul>
@@ -64,13 +64,13 @@
                         <div>
                             <a class=" collapsed w-100 btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#uno" aria-expanded="false">Planillas de Solictud</a>
                             <div id="uno" class="collapse">
-                                    <ul>
-                                        <li><a class="dropdown-item" href="Paginas/Servicios-vista.php">+ Catastro</a></li>
-                                        <li><a class="dropdown-item" href="Paginas/Servicios-vista.php">+ Registro Civil</a></li>
-                                        <li><a class="dropdown-item" href="Paginas/servicios-hacienda.php">+ Hacienda Municipal</a></li>
-                                        <li><a class="dropdown-item" href="Paginas/servicios-sindicatura.php">+ Sindicatura</a></li>
-                                    </ul>
-                                </div>
+                                <ul>
+                                    <li><a class="dropdown-item" href="Paginas/Servicios-vista.php">+ Catastro</a></li>
+                                    <li><a class="dropdown-item" href="Paginas/Servicios-vista.php">+ Registro Civil</a></li>
+                                    <li><a class="dropdown-item" href="Paginas/servicios-hacienda.php">+ Hacienda Municipal</a></li>
+                                    <li><a class="dropdown-item" href="Paginas/servicios-sindicatura.php">+ Sindicatura</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </ul>
                 </div>
@@ -230,7 +230,8 @@
                                             <div>
                                                 <h3 class="text-dark">Fundaindependencia</h3>
                                                 <p>Teléfono: 0424-7462137 <br> Correo electrónico:
-                                                <small>Fundaindependenciacapachonuevo@gmail.com</small>  </p>
+                                                    <small>Fundaindependenciacapachonuevo@gmail.com</small>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -262,7 +263,8 @@
                                             <div>
                                                 <h3 class="text-dark">Instituto de Deporte Recreacion y juventud</h3>
                                                 <p>Teléfono: 0424-7243816 <br> Correo electrónico:
-                                                <small>nrichardomar@gmail.com</small>  </p>
+                                                    <small>nrichardomar@gmail.com</small>
+                                                </p>
                                                 <a href="https://www.instagram.com/direcciondeportecapachonuevo/" target="_blank"><i class="lab la-instagram fs-1 text-light"></i> direcciondeportecapachonuevo</a>
                                             </div>
                                         </div>
@@ -284,22 +286,42 @@
             <div class="container p-md-5">
                 <div class="row text-center py-4">
                     <div class="col-md-3 px-5 mb-2">
-                        <h3 class="h1 text-light ">50k+</h3>
+                        <h3 class="h1 text-light ">
+                            50k+
+                        </h3>
                         <hr>
-                        <h3 class="text-light">Poblacion</h3>
+                        <h3 class="text-light">Poblacion
+                        </h3>
                     </div>
                     <div class="col-md-3 px-5 mb-2">
-                        <h3 class="h1 text-light ">5</h3>
+                        <h3 class="h1 text-light ">2
+                            <ul class="d-none">
+                                <li><a href="https://www.google.com/maps/search/hospitales+de+capacho+nuevo/@7.8237536,-72.3336357,14z" class="text-decoration-none text-light" target="_blank">Ambulatorio Capacho Nuevo</a> </li>
+                                <li><a href="https://www.google.com/maps/place/Ambulatorio+tipo+1/@7.8231889,-72.3218516,16z/data=!4m9!1m2!2m1!1shospitales+de+capacho+nuevo!3m5!1s0x8e666b44883c1e4f:0x3962cba1fac313c6!8m2!3d7.8231889!4d-72.3136119!15sChtob3NwaXRhbGVzIGRlIGNhcGFjaG8gbnVldm-SARNnb3Zlcm5tZW50X2hvc3BpdGFs4AEA" class="text-decoration-none text-light" target="_blank">Ambulatorio tipo 1</a> </li>
+                            </ul>
+                        </h3>
                         <hr>
                         <h3 class="text-light">Hospitales</h3>
                     </div>
                     <div class="col-md-3 px-5 mb-2">
-                        <h3 class="h1 text-light ">3</h3>
+                        <h3 class="h1 text-light ">3
+                            <ul class="d-none">
+                            <li><a href="https://www.google.com/maps/place/Escuela+Basica+Estado+Miranda/@7.8232101,-72.3218516,16z/data=!4m9!1m2!2m1!1sescuela+de+capacho+nuevo!3m5!1s0x8e666a172a3b0fbd:0x96d6da1dc0eaf7f6!8m2!3d7.8248087!4d-72.3130413!15sChhlc2N1ZWxhIGRlIGNhcGFjaG8gbnVldm-SAQZzY2hvb2zgAQA" class="text-decoration-none text-light" target="_blank">Escuela Basica Estado Miranda</a> </li>
+                            <li><a href="https://www.google.com/maps/place/U.E+Colegio+Santa+Mariana+de+Jes%C3%BAs/@7.8232101,-72.3218516,16z/data=!4m9!1m2!2m1!1sescuela+de+capacho+nuevo!3m5!1s0x8e666a11a603e541:0x9a5726efdc2cbb42!8m2!3d7.8240747!4d-72.3170196!15sChhlc2N1ZWxhIGRlIGNhcGFjaG8gbnVldm-SAQtoaWdoX3NjaG9vbOABAA" class="text-decoration-none text-light" target="_blank">U.E Colegio Santa Mariana de Jesús</a> </li>
+                            <li><a href="https://www.google.com/maps/place/Liceo+Nacional+Rm%C3%A1n+c%C3%A1rdenas/@7.8232101,-72.3218516,16z/data=!4m9!1m2!2m1!1sescuela+de+capacho+nuevo!3m5!1s0x8e666a16c9645253:0xf3073df5cf23c58b!8m2!3d7.8234128!4d-72.3129029!15sChhlc2N1ZWxhIGRlIGNhcGFjaG8gbnVldm-SAQZzY2hvb2zgAQA" class="text-decoration-none text-light" target="_blank">Liceo Nacional Rmán cárdenas</a> </li>
+                            <li><a href="https://www.google.com/maps/place/Escuela+Parroquial+Padre+Contreras/@7.8239874,-72.3154986,16z/data=!4m9!1m2!2m1!1sescuela+de+capacho+nuevo!3m5!1s0x8e666a3d86e23c33:0x809b50e5f0a77d27!8m2!3d7.8239872!4d-72.3072593!15sChhlc2N1ZWxhIGRlIGNhcGFjaG8gbnVldm-SAQ1wdWJsaWNfc2Nob29s4AEA" class="text-decoration-none text-light" target="_blank">Escuela Parroquial Padre Contreras</a> </li>
+                            </ul>
+                        </h3>
                         <hr>
                         <h3 class="text-light">Escuelas</h3>
                     </div>
                     <div class="col-md-3 px-5 mb-2">
-                        <h3 class="h1 text-light ">2</h3>
+                        <h3 class="h1 text-light ">2
+                            <ul class="d-none">
+                            <li><a href="https://www.google.com/maps/place/Iglesia+de+San+Pedro+de+Independencia/@7.8238967,-72.3148397,16z/data=!4m9!1m2!2m1!1siglesia+de+capacho+nuevo!3m5!1s0x8e666a3d9b68cd83:0x8c8689d0c87abb0c!8m2!3d7.8238967!4d-72.3066!15sChhpZ2xlc2lhIGRlIGNhcGFjaG8gbnVldm-SAQZjaHVyY2jgAQA" class="text-decoration-none text-light" target="_blank">Iglesia de San Pedro de Independencia</a> </li>
+                            <li><a href="https://www.google.com/maps/place/Casa+De+Oracion+Jesucristo+Es+El+Rey/@7.8238967,-72.3148397,16z/data=!4m9!1m2!2m1!1siglesia+de+capacho+nuevo!3m5!1s0x8e666a3d6a407c29:0x39d2fc2846d9c3e!8m2!3d7.8255096!4d-72.3061828!15sChhpZ2xlc2lhIGRlIGNhcGFjaG8gbnVldm-SARBhcG9zdG9saWNfY2h1cmNo4AEA" class="text-decoration-none text-light" target="_blank">Casa De Oracion Jesucristo Es El Rey</a> </li>
+                            </ul>
+                        </h3>
                         <hr>
                         <h3 class="text-light">Iglesias</h3>
                     </div>
@@ -375,7 +397,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/cargando.js"></script>
     <script>
         $(document).ready(function() {

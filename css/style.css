@@ -524,6 +524,28 @@ entes */
     background-color: #f8f9fa;
     opacity: 1;
 }
+.datos h3 ul{
+   
+    width: 100%;
+    font-size: 15px;
+     background-color: rgb(17, 17, 17);
+}
+.datos h3 ul li{
+   list-style: none;
+   padding: 5px 0;
+    
+}
+.datos h3{
+    position: relative;
+}
+.datos h3:hover ul{
+    padding: 0;
+    display: block !important;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s;
+}
 
 /* Seccion Noticias */
 
@@ -729,6 +751,37 @@ footer h5 {
 .municipio-turismo {
     background-color: #f0f4f7;
 }
+.municipio-galeria{
+    position: relative;
+    display: grid;
+
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-rows: minmax(250px,auto);
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+.municipio-galeria .caja-galeria{
+    max-width: 100%;
+    height: 100%;
+}
+.municipio-galeria .caja-galeria:nth-child(3){
+   grid-row: span 2;
+}
+.municipio-galeria .caja-galeria:nth-child(4){
+   grid-column: span 2;
+}
+.municipio-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.municipio-galeria img:hover{
+    filter: saturate(0);
+    transition: filter 0.5s;
+
+}
 
 /* 
 ------Pagina alcaldia----------
@@ -915,5 +968,14 @@ footer h5 {
     }
     #pagina-inicial-escudo{
     width: 60px;
+    }
+    .municipio-galeria{
+      
+        grid-template-columns: repeat(50%,minmax(300px,1fr));
+        grid-template-rows: minmax(auto,auto);
+    }
+    .municipio-galeria .caja-galeria{
+        grid-row: unset !important;
+        grid-column: unset  !important;
     }
 }
